@@ -31,7 +31,7 @@ const CallToAction = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white/10 text-lg py-6 px-8" 
+              className="bg-white text-mahathai-primary hover:bg-gray-100 text-lg py-6 px-8" 
               asChild
             >
               <Link to="/start-campaign">
