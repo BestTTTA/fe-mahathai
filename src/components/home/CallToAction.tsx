@@ -30,7 +30,7 @@ const CallToAction = () => {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-[#549AED] hover:bg-gray-100 text-lg py-6 px-8" 
+              className="bg-white text-[#549AED] hover:bg-gray-100 hover:text-[#549AED] text-lg py-6 px-8" 
               asChild
             >
               <Link to="/start-campaign">
