@@ -33,6 +33,9 @@ const Navbar = () => {
           <Link to="/about" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             เกี่ยวกับเรา
           </Link>
+          <Link to="/contact" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+            ติดต่อเรา
+          </Link>
         </nav>
         
         {/* Desktop Actions */}
@@ -90,6 +93,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               เกี่ยวกับเรา
+            </Link>
+            <Link 
+              to="/contact" 
+              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              ติดต่อเรา
             </Link>
             <hr className="border-gray-200" />
             <div className="flex justify-between items-center">
