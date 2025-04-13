@@ -53,7 +53,7 @@ const Navbar = () => {
             </Link>
           </Button>
           <Button className="bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
-            <Link to="/start-campaign">เริ่มต้นระดมทุน</Link>
+            <Link to="/donation">เริ่มต้นบริจาค</Link>
           </Button>
         </div>
         
@@ -109,8 +109,8 @@ const Navbar = () => {
                 </Link>
               </Button>
               <Button className="flex-1 bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
-                <Link to="/start-campaign" onClick={() => setIsMenuOpen(false)}>
-                  เริ่มต้นระดมทุน
+                <Link to="/donation" onClick={() => setIsMenuOpen(false)}>
+                  เริ่มต้นบริจาค
                 </Link>
               </Button>
             </div>
