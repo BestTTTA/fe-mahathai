@@ -1,11 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Search, Users } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative py-16 md:py-24 hero-gradient overflow-hidden">
+  return <section className="relative py-16 md:py-24 hero-gradient overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-10 md:mb-0">
@@ -35,12 +32,8 @@ const Hero = () => {
           
           <div className="md:w-1/2 relative">
             <div className="rounded-xl overflow-hidden shadow-2xl relative">
-              <img 
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" 
-                alt="เด็กไทยยิ้มแย้มแจ่มใส" 
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="เด็กไทยยิ้มแย้มแจ่มใส" className="w-full h-auto object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-xl font-bold mb-2">ช่วยเหลือเด็กด้อยโอกาสในจังหวัดเชียงใหม่</h3>
                 <div className="flex justify-between items-center">
@@ -66,7 +59,9 @@ const Hero = () => {
               </div>
             </div>
             
-            <div className="absolute -top-6 -left-6 bg-white rounded-lg shadow-lg p-4 animate-float hidden md:block" style={{ animationDelay: "1s" }}>
+            <div className="absolute -top-6 -left-6 bg-white rounded-lg shadow-lg p-4 animate-float hidden md:block" style={{
+            animationDelay: "1s"
+          }}>
               <div className="flex items-center gap-3">
                 <Heart className="h-10 w-10 text-red-500" />
                 <div>
@@ -80,8 +75,6 @@ const Hero = () => {
       </div>
       
       <div className="absolute -bottom-10 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-white"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
