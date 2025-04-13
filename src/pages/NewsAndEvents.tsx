@@ -16,12 +16,12 @@ const NewsAndEvents = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <NewsCard
             image="/lovable-uploads/a4821d3e-49c3-426e-beab-586b70330202.png"
-            title="มูลนิธิฯ ร่วมนำไร่เพื่อการพัฒนาคนพิการ ร่วมการสัมมนา "คนพิการไทยกับโอกาสในโลกยุคใหม่""
+            title="มูลนิธิฯ ร่วมนำไร่เพื่อการพัฒนาคนพิการ ร่วมการสัมมนา 'คนพิการไทยกับโอกาสในโลกยุคใหม่'"
             url="/news/1"
           />
           <NewsCard
             image="/lovable-uploads/d5a0aee6-d6de-4d97-86b0-4c0bf1101cff.png"
-            title="มูลนิธิฯ ให้การต้อนรับนักศึกษาโครงการฝึกอบรมหลักสูตร "ข้าราชการท้องถิ่นระดับชำนาญการพิเศษ" รุ่นที่ 21"
+            title="มูลนิธิฯ ให้การต้อนรับนักศึกษาโครงการฝึกอบรมหลักสูตร 'ข้าราชการท้องถิ่นระดับชำนาญการพิเศษ' รุ่นที่ 21"
             url="/news/2"
           />
           <NewsCard
@@ -54,12 +54,12 @@ const NewsAndEvents = () => {
           />
           <NewsCard
             image="/lovable-uploads/d5a0aee6-d6de-4d97-86b0-4c0bf1101cff.png"
-            title='"รักของแม่ รักแท้ไร้เงื่อนไข"'
+            title="'รักของแม่ รักแท้ไร้เงื่อนไข'"
             url="/news/6"
           />
           <NewsCard
             image="/lovable-uploads/a4821d3e-49c3-426e-beab-586b70330202.png"
-            title='ขอเชิญชมการแสดง "สุดยอดนักรำอาวุโธเด็กพิเศษ"'
+            title="ขอเชิญชมการแสดง 'สุดยอดนักรำอาวุโธเด็กพิเศษ'"
             url="/news/7"
           />
           <NewsCard
