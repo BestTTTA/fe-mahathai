@@ -27,11 +27,8 @@ const Navbar = () => {
           <Link to="/campaigns" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             แคมเปญทั้งหมด
           </Link>
-          <Link to="/categories" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
-            หมวดหมู่
-          </Link>
           <Link to="/donation" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
-            หมวดหมู่สำหรับการบริจาค
+            หมวดหมู่
           </Link>
           <Link to="/about" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             เกี่ยวกับเรา
@@ -81,18 +78,11 @@ const Navbar = () => {
               แคมเปญทั้งหมด
             </Link>
             <Link 
-              to="/categories" 
+              to="/donation" 
               className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >
               หมวดหมู่
-            </Link>
-            <Link 
-              to="/how-it-works" 
-              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              วิธีการทำงาน
             </Link>
             <Link 
               to="/about" 
