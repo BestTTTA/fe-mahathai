@@ -30,6 +30,9 @@ const Navbar = () => {
           <Link to="/donation" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             หมวดหมู่
           </Link>
+          <Link to="/news" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+            ข่าวสารและกิจกรรม
+          </Link>
           <Link to="/about" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             เกี่ยวกับเรา
           </Link>
@@ -86,6 +89,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               หมวดหมู่
+            </Link>
+            <Link 
+              to="/news" 
+              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              ข่าวสารและกิจกรรม
             </Link>
             <Link 
               to="/about" 
