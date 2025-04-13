@@ -91,12 +91,19 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
       </CardContent>
       
       <CardFooter className="p-4 pt-0">
-        <Button className="w-full bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
-          <Link to={`/campaigns/${campaign.id}`} className="flex items-center justify-center">
-            <span>ร่วมบริจาค</span>
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
+        <div className="grid grid-cols-2 gap-2 w-full">
+          <Button variant="outline" asChild className="w-full">
+            <Link to={`/campaigns/${campaign.id}`} className="flex items-center justify-center">
+              <span>เรื่องราว</span>
+            </Link>
+          </Button>
+          <Button className="w-full bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
+            <Link to={`/campaigns/${campaign.id}/donate`} className="flex items-center justify-center">
+              <span>ร่วมบริจาค</span>
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );

@@ -19,7 +19,7 @@ const CampaignHeader = ({ campaign }: CampaignHeaderProps) => {
   const [isFavorite, setIsFavorite] = useState(false);
   
   return (
-    <>
+    <div className="mb-8">
       <img 
         src={campaign.image} 
         alt={campaign.title} 
@@ -63,7 +63,7 @@ const CampaignHeader = ({ campaign }: CampaignHeaderProps) => {
           <p className="font-medium">{campaign.organizer}</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

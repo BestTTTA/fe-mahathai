@@ -31,12 +31,16 @@ const CampaignTabs = ({ description, stories, updates }: CampaignTabsProps) => {
       
       <TabsContent value="story" className="space-y-6">
         <div className="prose max-w-none">
-          <p className="text-lg">{description}</p>
-          <p>
+          <p className="text-lg mb-6">{description}</p>
+          <p className="mb-6">
             กองทุน HERO FUND มีเป้าหมายในการช่วยเหลือเด็กและเยาวชนที่ขาดโอกาสทางการศึกษา โดยเฉพาะในพื้นที่ชายขอบและชุมชนชาติพันธุ์ ซึ่งมักจะประสบปัญหาในการเข้าถึงการศึกษาที่มีคุณภาพ การสนับสนุนของท่านจะช่วยให้เด็กๆ ได้มีโอกาสในการเรียนรู้และพัฒนาศักยภาพของตนเอง
           </p>
           
-          <h3 className="text-xl font-semibold mt-6 mb-4">เรื่องราวจากผู้รับทุน</h3>
+          <p className="mb-6">
+            กองทุน HERO FUND มีเป้าหมายในการช่วยเหลือเด็กและเยาวชนที่ขาดโอกาสทางการศึกษา โดยเฉพาะในพื้นที่ชายขอบและชุมชนชาติพันธุ์ ซึ่งมีปัญหาประสบปัญหาในการเข้าถึงการศึกษาที่มีคุณภาพ การสนับสนุนของท่านจะช่วยให้เด็กๆ ได้มีโอกาสในการเรียนรู้และพัฒนาศักยภาพของตนเอง
+          </p>
+          
+          <h3 className="text-xl font-semibold mt-8 mb-4">เรื่องราวจากผู้รับทุน</h3>
           
           {stories.map(story => (
             <div key={story.id} className="mb-8 bg-gray-50 p-6 rounded-lg">

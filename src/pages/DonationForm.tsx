@@ -68,11 +68,11 @@ const DonationForm = () => {
           </Link>
           
           <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-            <div className="flex items-center mb-6">
+            <div className="flex items-center mb-8 border-b pb-6">
               <img 
                 src={campaign.image} 
                 alt={campaign.title} 
-                className="w-12 h-12 rounded-full object-cover mr-3"
+                className="w-16 h-16 rounded-md object-cover mr-4"
               />
               <div>
                 <h2 className="font-medium text-lg">ร่วมบริจาค</h2>
@@ -104,7 +104,7 @@ const DonationForm = () => {
               setDonorType={setDonorType}
             />
             
-            <div className="flex justify-between">
+            <div className="pt-4 flex justify-between">
               <Button variant="outline" asChild>
                 <Link to={`/campaigns/${id}`}>
                   <ChevronLeft className="h-4 w-4 mr-2" />
