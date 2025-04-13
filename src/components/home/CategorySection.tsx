@@ -6,7 +6,7 @@ import {
   Users, 
   School, 
   Home, 
-  Wheelchair, 
+  Accessibility, 
   Baby, 
   HandHeart,
   FlaskConical,
@@ -25,7 +25,7 @@ const categories = [
   {
     id: 2,
     name: "ผู้พิการ",
-    icon: <Wheelchair className="h-6 w-6" />,
+    icon: <Accessibility className="h-6 w-6" />,
     color: "bg-purple-100 text-purple-600",
     path: "/categories/disabled"
   },
