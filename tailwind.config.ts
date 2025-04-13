@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -53,14 +52,14 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom Mahathai colors (UPDATED to new theme)
         mahathai: {
-          primary: "#549AEB",    // Updated from #8B5CF6
-          secondary: "#303E68",  // Updated from #7C3AED
-          dark: "#303E68",       // Updated from #1A1F2C
-          light: "#F5F9FF",      // Updated but kept lighter shade for contrast
-          accent: "#F59E5F"      // Updated from #FF9E2D
+          primary: "#549AEB",
+          secondary: "#303E68",
+          dark: "#303E68",
+          light: "#F5F9FF",
+          accent: "#F59E5F"
         },
+        'custom-orange': '#F59E5F'
       },
       borderRadius: {
         lg: "var(--radius)",
