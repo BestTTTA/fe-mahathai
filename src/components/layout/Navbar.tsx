@@ -30,8 +30,8 @@ const Navbar = () => {
           <Link to="/categories" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             หมวดหมู่
           </Link>
-          <Link to="/how-it-works" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
-            วิธีการทำงาน
+          <Link to="/donation" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+            หมวดหมู่สำหรับการบริจาค
           </Link>
           <Link to="/about" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
             เกี่ยวกับเรา
