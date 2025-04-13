@@ -29,7 +29,6 @@ const CallToAction = () => {
               </Link>
             </Button>
             <Button 
-              variant="outline" 
               size="lg" 
               className="bg-white text-mahathai-primary hover:bg-gray-100 text-lg py-6 px-8" 
               asChild
