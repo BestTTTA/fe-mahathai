@@ -65,16 +65,7 @@ const CampaignDetail = () => {
             />
           </div>
           
-          {/* Right column - Donation card */}
-          <div className="lg:col-span-1">
-            <DonationCard 
-              campaignId={campaign.id}
-              raisedAmount={campaign.raisedAmount}
-              goalAmount={campaign.goalAmount}
-              donorsCount={campaign.donorsCount}
-              daysLeft={campaign.daysLeft}
-            />
-          </div>
+          
         </div>
       </div>
     </Layout>
