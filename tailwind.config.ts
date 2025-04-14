@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -87,6 +88,7 @@ const config = {
       },
       fontFamily: {
         'kanit': ['Kanit', 'sans-serif'],
+        'mitr': ['Mitr', 'sans-serif'],
       },
     },
   },

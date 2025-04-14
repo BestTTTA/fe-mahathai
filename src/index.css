@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Mitr', sans-serif;
+  }
+}
+
 .progress-bar {
   height: 8px;
   background-color: #e2e8f0;
