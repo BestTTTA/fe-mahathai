@@ -41,6 +41,42 @@ const featuredCampaigns = [
     daysLeft: 30,
     category: "การศึกษา",
     organizer: "สมาคมช่วยเหลือเด็กชายขอบ"
+  },
+  {
+    id: 4,
+    title: "โครงการสร้างห้องสมุดชุมชนในพื้นที่ชนบท",
+    description: "สร้างแหล่งเรียนรู้และส่งเสริมนิสัยรักการอ่านให้กับเด็กและเยาวชนในพื้นที่ชนบทห่างไกล",
+    image: "https://images.unsplash.com/photo-1583468323330-9032ad490fed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    raisedAmount: 520000,
+    goalAmount: 800000,
+    donorsCount: 1120,
+    daysLeft: 20,
+    category: "การศึกษา",
+    organizer: "มูลนิธิหนังสือเพื่อเด็ก"
+  },
+  {
+    id: 5,
+    title: "โครงการผ่าตัดแก้ไขปากแหว่งเพดานโหว่สำหรับเด็ก",
+    description: "ช่วยเหลือเด็กที่มีภาวะปากแหว่งเพดานโหว่ให้ได้รับการผ่าตัดและฟื้นฟูอย่างมีคุณภาพ",
+    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    raisedAmount: 980000,
+    goalAmount: 1500000,
+    donorsCount: 2100,
+    daysLeft: 10,
+    category: "สาธารณสุข",
+    organizer: "มูลนิธิเด็กโรงพยาบาลศิริราช"
+  },
+  {
+    id: 6,
+    title: "โครงการส่งเสริมอาชีพให้ผู้สูงอายุในชุมชน",
+    description: "สร้างโอกาสและพัฒนาทักษะอาชีพให้กับผู้สูงอายุในชุมชนเพื่อสร้างรายได้และคุณค่าในตัวเอง",
+    image: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    raisedAmount: 450000,
+    goalAmount: 700000,
+    donorsCount: 850,
+    daysLeft: 35,
+    category: "ผู้สูงอายุ",
+    organizer: "มูลนิธิพัฒนาชีวิตผู้สูงวัย"
   }
 ];
 

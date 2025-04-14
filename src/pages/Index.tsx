@@ -8,6 +8,7 @@ import ImpactSection from "@/components/home/ImpactSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
 import HowItWorks from "@/components/home/HowItWorks";
 import CallToAction from "@/components/home/CallToAction";
+import SupportersSection from "@/components/home/SupportersSection";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <Hero />
       <CategorySection />
       <FeaturedCampaigns />
+      <SupportersSection />
       <TransparencySection />
       <ImpactSection />
       <HowItWorks />
