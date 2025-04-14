@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -131,7 +130,6 @@ const DonationForm = () => {
               setDonationType={setDonationType}
             />
             
-            {/* Display selected tier benefits */}
             {selectedTier !== null && (
               <div className="mb-8 p-4 bg-mahathai-light rounded-lg">
                 <div className="flex items-center mb-2">
