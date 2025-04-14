@@ -52,7 +52,7 @@ const Campaigns = () => {
     {
       id: 4,
       title: "กองทุนช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติ",
-      description: "กองทุนสำหรับช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติในประเทศไทย เพื่อบรรเทาความเดือดร้���นเบื้องต้นและฟื้นฟูชีวิตความเป็นอยู่",
+      description: "กองทุนสำหรับช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติในประเทศไทย เพื่อบรรเทาความเดือดร้อนนเบื้องต้นและฟื้นฟูชีวิตความเป็นอยู่",
       image: "https://picsum.photos/seed/campaign4/600/400",
       raisedAmount: 2800000,
       goalAmount: 5000000,
@@ -149,7 +149,7 @@ const Campaigns = () => {
                   </div>
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">ทุกจำนวน</SelectItem>
+                  <SelectItem value="all">ทุกจำนวน</SelectItem>
                   <SelectItem value="under-1m">น้อยกว่า 1 ล้านบาท</SelectItem>
                   <SelectItem value="1m-3m">1 - 3 ล้านบาท</SelectItem>
                   <SelectItem value="3m-5m">3 - 5 ล้านบาท</SelectItem>
