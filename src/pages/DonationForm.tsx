@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ArrowRight, BadgeCheck, Gift, Star } from "lucide-react";
+import { ChevronLeft, ArrowRight, BadgeCheck, Gift, Star, Sticker } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import DonationAmountSection from "@/components/donation/DonationAmountSection";
 import PaymentMethodSection from "@/components/donation/PaymentMethodSection";
@@ -33,22 +34,29 @@ const DonationForm = () => {
     {
       amount: 100,
       title: "ผู้สนับสนุน",
-      description: "การสนับสนุนของคุณมีความหมายต่อพวกเรา",
+      description: "ไม่มีของตอบแทน",
       perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน"],
       icon: BadgeCheck
     },
     {
+      amount: 500,
+      title: "ผู้สนับสนุนระดับต้น",
+      description: "ได้สติ๊กเกอร์หรือโปสการ์ด",
+      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "สติ๊กเกอร์หรือโปสการ์ดที่ระลึก 1 ชิ้น"],
+      icon: Sticker
+    },
+    {
       amount: 1000,
-      title: "ผู้สนับสนุนพิเศษ",
-      description: "รับเสื้อที่ระลึกจากโครงการ",
-      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อที่ระลึกจากโครงการ 1 ตัว"],
+      title: "ผู้สนับสนุนระดับกลาง",
+      description: "ได้เสื้อยืด 1 ตัว",
+      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อยืดที่ระลึกจากโครงการ 1 ตัว"],
       icon: Gift
     },
     {
-      amount: 5000,
-      title: "นักสนับสนุนระดับพรีเมียม",
-      description: "รับของที่ระลึกพิเศษและสิทธิพิเศษอื่นๆ",
-      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อที่ระลึกจากโครงการ", "ใบประกาศเกียรติคุณ", "เข้าร่วมกิจกรรมพิเศษ"],
+      amount: 3000,
+      title: "ผู้สนับสนุนพิเศษ",
+      description: "ได้เสื้อ + ของพรีเมียมอื่น ๆ",
+      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อยืดที่ระลึกจากโครงการ 1 ตัว", "กระเป๋าผ้าที่ระลึก", "ใบประกาศเกียรติคุณ", "สิทธิพิเศษในการเข้าร่วมกิจกรรม"],
       icon: Star
     },
   ];
@@ -62,7 +70,7 @@ const DonationForm = () => {
   // Handle tier selection
   useEffect(() => {
     if (selectedAmount) {
-      const amount = parseInt(selectedAmount.replace(/,/g, ''));
+      const amount = parseInt(selectedAmount);
       const tierIndex = donationTiers.findIndex(tier => tier.amount === amount);
       setSelectedTier(tierIndex >= 0 ? tierIndex : null);
     } else if (customAmount) {

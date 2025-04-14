@@ -27,6 +27,30 @@ const DonationAmountSection = ({
   donationType,
   setDonationType
 }: DonationAmountSectionProps) => {
+  // Predefined donation tiers with their rewards
+  const donationTiers = [
+    {
+      amount: "100",
+      title: "ผู้สนับสนุน",
+      description: "ไม่มีของตอบแทน",
+    },
+    {
+      amount: "500",
+      title: "ผู้สนับสนุนระดับต้น",
+      description: "ได้สติ๊กเกอร์หรือโปสการ์ด",
+    },
+    {
+      amount: "1000",
+      title: "ผู้สนับสนุนระดับกลาง",
+      description: "ได้เสื้อยืด 1 ตัว",
+    },
+    {
+      amount: "3000",
+      title: "ผู้สนับสนุนพิเศษ",
+      description: "ได้เสื้อ + ของพรีเมียมอื่น ๆ",
+    },
+  ];
+
   return (
     <div className="mb-8">
       <h3 className="flex items-center font-semibold text-lg mb-4">
@@ -41,18 +65,21 @@ const DonationAmountSection = ({
         </TabsList>
         
         <TabsContent value="รายครั้ง">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-            {donationOptions.map((option) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            {donationTiers.map((tier) => (
               <div 
-                key={option.amount}
-                className={`border ${selectedAmount === option.amount ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors text-center`}
+                key={tier.amount}
+                className={`border ${selectedAmount === tier.amount ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors`}
                 onClick={() => {
-                  setSelectedAmount(option.amount);
+                  setSelectedAmount(tier.amount);
                   setCustomAmount("");
                 }}
               >
-                <div className="text-xl font-bold">{option.amount} บาท</div>
-                <div className="text-sm text-gray-600">{option.description}</div>
+                <div className="flex justify-between items-center mb-1">
+                  <div className="text-xl font-bold">{tier.amount} บาท</div>
+                  <div className="text-sm font-medium text-mahathai-primary">{tier.title}</div>
+                </div>
+                <div className="text-sm text-gray-600">{tier.description}</div>
               </div>
             ))}
           </div>
@@ -76,18 +103,21 @@ const DonationAmountSection = ({
             <p>การบริจาคแบบรายเดือนช่วยให้องค์กรสามารถวางแผนระยะยาวและดำเนินโครงการได้อย่างต่อเนื่อง</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
-            {donationOptions.map((option) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+            {donationTiers.map((tier) => (
               <div 
-                key={option.amount}
-                className={`border ${selectedAmount === option.amount ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors text-center`}
+                key={tier.amount}
+                className={`border ${selectedAmount === tier.amount ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors`}
                 onClick={() => {
-                  setSelectedAmount(option.amount);
+                  setSelectedAmount(tier.amount);
                   setCustomAmount("");
                 }}
               >
-                <div className="text-xl font-bold">{option.amount} บาท / เดือน</div>
-                <div className="text-sm text-gray-600">{option.description}</div>
+                <div className="flex justify-between items-center mb-1">
+                  <div className="text-xl font-bold">{tier.amount} บาท / เดือน</div>
+                  <div className="text-sm font-medium text-mahathai-primary">{tier.title}</div>
+                </div>
+                <div className="text-sm text-gray-600">{tier.description}</div>
               </div>
             ))}
           </div>
