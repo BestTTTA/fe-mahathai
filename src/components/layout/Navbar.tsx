@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { 
   Menu, 
@@ -12,6 +11,14 @@ import {
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const getLinkClasses = (path: string) => {
+    return `text-gray-700 font-medium transition 
+      ${location.pathname === path 
+        ? 'text-mahathai-primary' 
+        : 'hover:text-mahathai-primary'}`;
+  };
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
@@ -22,26 +29,39 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link to="/campaigns" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+          <Link 
+            to="/campaigns" 
+            className={getLinkClasses("/campaigns")}
+          >
             แคมเปญทั้งหมด
           </Link>
-          <Link to="/donation" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+          <Link 
+            to="/donation" 
+            className={getLinkClasses("/donation")}
+          >
             หมวดหมู่
           </Link>
-          <Link to="/news" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+          <Link 
+            to="/news" 
+            className={getLinkClasses("/news")}
+          >
             ข่าวสารและกิจกรรม
           </Link>
-          <Link to="/about" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+          <Link 
+            to="/about" 
+            className={getLinkClasses("/about")}
+          >
             เกี่ยวกับเรา
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-mahathai-primary font-medium transition">
+          <Link 
+            to="/contact" 
+            className={getLinkClasses("/contact")}
+          >
             ติดต่อเรา
           </Link>
         </nav>
         
-        {/* Desktop Actions */}
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="ghost" size="icon" aria-label="ค้นหา">
             <Search className="h-5 w-5" />
@@ -60,7 +80,6 @@ const Navbar = () => {
           </Button>
         </div>
         
-        {/* Mobile Menu Button */}
         <Button 
           variant="ghost" 
           size="icon" 
@@ -72,7 +91,6 @@ const Navbar = () => {
         </Button>
       </div>
       
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
