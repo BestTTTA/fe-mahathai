@@ -1,15 +1,16 @@
-
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import CampaignCard from "@/components/campaigns/CampaignCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Search, Filter } from "lucide-react";
+import { Search, Filter, Percent, BadgeDollarSign } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const Campaigns = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  
+  const [donationRange, setDonationRange] = useState<string>("");
+
   // Mock campaign data
   const campaigns = [
     {
@@ -51,7 +52,7 @@ const Campaigns = () => {
     {
       id: 4,
       title: "กองทุนช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติ",
-      description: "กองทุนสำหรับช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติในประเทศไทย เพื่อบรรเทาความเดือดร้อนเบื้องต้นและฟื้นฟูชีวิตความเป็นอยู่",
+      description: "กองทุนสำหรับช่วยเหลือผู้ประสบภัยพิบัติทางธรรมชาติในประเทศไทย เพื่อบรรเทาความเดือดร้���นเบื้องต้นและฟื้นฟูชีวิตความเป็นอยู่",
       image: "https://picsum.photos/seed/campaign4/600/400",
       raisedAmount: 2800000,
       goalAmount: 5000000,
@@ -85,13 +86,39 @@ const Campaigns = () => {
       organizer: "มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ",
     },
   ];
-  
-  // Filter campaigns based on search query
-  const filteredCampaigns = campaigns.filter(campaign => 
-    campaign.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    campaign.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    campaign.category.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+
+  // Filter campaigns based on search query and donation range
+  const filteredCampaigns = campaigns.filter(campaign => {
+    // Filter by search query
+    const matchesSearch = campaign.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      campaign.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      campaign.category.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    // Filter by donation range
+    let matchesDonationRange = true;
+    if (donationRange) {
+      const raisedAmount = campaign.raisedAmount;
+      
+      switch (donationRange) {
+        case "under-1m":
+          matchesDonationRange = raisedAmount < 1000000;
+          break;
+        case "1m-3m":
+          matchesDonationRange = raisedAmount >= 1000000 && raisedAmount < 3000000;
+          break;
+        case "3m-5m":
+          matchesDonationRange = raisedAmount >= 3000000 && raisedAmount < 5000000;
+          break;
+        case "over-5m":
+          matchesDonationRange = raisedAmount >= 5000000;
+          break;
+        default:
+          matchesDonationRange = true;
+      }
+    }
+    
+    return matchesSearch && matchesDonationRange;
+  });
 
   return (
     <Layout>
@@ -112,9 +139,28 @@ const Campaigns = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
+            
+            <div className="w-full md:w-64">
+              <Select value={donationRange} onValueChange={setDonationRange}>
+                <SelectTrigger className="w-full">
+                  <div className="flex items-center">
+                    <BadgeDollarSign size={16} className="mr-2" />
+                    <SelectValue placeholder="จำนวนเงินระดมทุน" />
+                  </div>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="">ทุกจำนวน</SelectItem>
+                  <SelectItem value="under-1m">น้อยกว่า 1 ล้านบาท</SelectItem>
+                  <SelectItem value="1m-3m">1 - 3 ล้านบาท</SelectItem>
+                  <SelectItem value="3m-5m">3 - 5 ล้านบาท</SelectItem>
+                  <SelectItem value="over-5m">มากกว่า 5 ล้านบาท</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            
             <Button variant="outline" className="flex items-center gap-2">
               <Filter size={16} />
-              <span>ตัวกรอง</span>
+              <span>ตัวกรองอื่นๆ</span>
             </Button>
           </div>
           
@@ -132,6 +178,15 @@ const Campaigns = () => {
               {filteredCampaigns.map(campaign => (
                 <CampaignCard key={campaign.id} campaign={campaign} />
               ))}
+              {filteredCampaigns.length === 0 && (
+                <div className="col-span-3 text-center py-12">
+                  <p className="text-gray-500 mb-2">ไม่พบแคมเปญที่ตรงตามเงื่อนไขการค้นหา</p>
+                  <Button variant="outline" onClick={() => {
+                    setSearchQuery("");
+                    setDonationRange("");
+                  }}>ล้างตัวกรอง</Button>
+                </div>
+              )}
             </TabsContent>
             
             <TabsContent value="education" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

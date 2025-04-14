@@ -4,6 +4,8 @@ import Layout from "@/components/layout/Layout";
 import CampaignHeader from "@/components/campaign/CampaignHeader";
 import CampaignTabs from "@/components/campaign/CampaignTabs";
 import DonationCard from "@/components/campaign/DonationCard";
+import { Card, CardContent } from "@/components/ui/card";
+import { BadgeCheck, Gift, Star } from "lucide-react";
 
 const CampaignDetail = () => {
   const { id } = useParams();
@@ -21,6 +23,29 @@ const CampaignDetail = () => {
     category: "การศึกษา",
     organizer: "มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ",
     organizerLogo: "/lovable-uploads/3a4e2117-b588-4492-b6f6-28a3bdb96294.png",
+    donationTiers: [
+      {
+        amount: 100,
+        title: "ผู้สนับสนุน",
+        description: "การสนับสนุนของคุณมีความหมายต่อพวกเรา ขอบคุณที่ร่วมสร้างการเปลี่ยนแปลง",
+        perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน"],
+        icon: BadgeCheck
+      },
+      {
+        amount: 1000,
+        title: "ผู้สนับสนุนพิเศษ",
+        description: "รับเสื้อที่ระลึกจากโครงการ และร่วมเป็นส่วนหนึ่งของการเปลี่ยนแปลงที่ยั่งยืน",
+        perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อที่ระลึกจากโครงการ 1 ตัว"],
+        icon: Gift
+      },
+      {
+        amount: 5000,
+        title: "นักสนับสนุนระดับพรีเมียม",
+        description: "เป็นส่วนสำคัญในการผลักดันโครงการให้ประสบความสำเร็จ พร้อมของที่ระลึกพิเศษ",
+        perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อที่ระลึกจากโครงการ 1 ตัว", "ใบประกาศเกียรติคุณผู้สนับสนุนโครงการ", "เข้าร่วมกิจกรรมพิเศษกับทีมงานโครงการ"],
+        icon: Star
+      }
+    ],
     updates: [
       {
         id: 1,
@@ -63,6 +88,35 @@ const CampaignDetail = () => {
               stories={campaign.stories} 
               updates={campaign.updates} 
             />
+            
+            {/* Donation Tiers */}
+            <div className="mt-8">
+              <h3 className="text-2xl font-bold mb-6">ระดับการสนับสนุน</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {campaign.donationTiers.map((tier, index) => (
+                  <Card key={index} className="overflow-hidden border-2 hover:border-mahathai-primary transition-all hover:shadow-md">
+                    <div className="bg-mahathai-light p-4 flex justify-between items-center">
+                      <h4 className="font-bold text-lg">{tier.title}</h4>
+                      <tier.icon className="h-6 w-6 text-mahathai-primary" />
+                    </div>
+                    <CardContent className="p-6">
+                      <div className="text-2xl font-bold mb-2 text-mahathai-primary">
+                        {tier.amount.toLocaleString()} บาท
+                      </div>
+                      <p className="text-gray-600 mb-4">{tier.description}</p>
+                      <div>
+                        <h5 className="font-semibold mb-2">สิทธิประโยชน์:</h5>
+                        <ul className="list-disc pl-5 space-y-1">
+                          {tier.perks.map((perk, i) => (
+                            <li key={i} className="text-sm text-gray-700">{perk}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
           
           {/* Right column - Donation card */}

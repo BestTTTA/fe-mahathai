@@ -1,9 +1,9 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ArrowRight } from "lucide-react";
+import { ChevronLeft, ArrowRight, BadgeCheck, Gift, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import DonationAmountSection from "@/components/donation/DonationAmountSection";
 import PaymentMethodSection from "@/components/donation/PaymentMethodSection";
@@ -19,6 +19,7 @@ const DonationForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [donorType, setDonorType] = useState("บุคคล");
+  const [selectedTier, setSelectedTier] = useState<number | null>(null);
   
   // Mock campaign data
   const campaign = {
@@ -28,11 +29,51 @@ const DonationForm = () => {
     image: "/lovable-uploads/3a4e2117-b588-4492-b6f6-28a3bdb96294.png",
   };
   
-  const donationOptions = [
-    { amount: "470", description: "บริการสุขภาพจิต 1 sessions" },
-    { amount: "2,350", description: "บริการสุขภาพจิต 5 sessions" },
-    { amount: "4,700", description: "บริการสุขภาพจิต 10 sessions" },
+  // Define donation tiers
+  const donationTiers = [
+    {
+      amount: 100,
+      title: "ผู้สนับสนุน",
+      description: "การสนับสนุนของคุณมีความหมายต่อพวกเรา",
+      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน"],
+      icon: BadgeCheck
+    },
+    {
+      amount: 1000,
+      title: "ผู้สนับสนุนพิเศษ",
+      description: "รับเสื้อที่ระลึกจากโครงการ",
+      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อที่ระลึกจากโครงการ 1 ตัว"],
+      icon: Gift
+    },
+    {
+      amount: 5000,
+      title: "นักสนับสนุนระดับพรีเมียม",
+      description: "รับของที่ระลึกพิเศษและสิทธิพิเศษอื่นๆ",
+      perks: ["ได้รับการขอบคุณทางอีเมล", "ได้รับจดหมายข่าวประจำเดือน", "เสื้อที่ระลึกจากโครงการ", "ใบประกาศเกียรติคุณ", "เข้าร่วมกิจกรรมพิเศษ"],
+      icon: Star
+    },
   ];
+  
+  // Convert donation tier amounts to strings for the donation options
+  const donationOptions = donationTiers.map(tier => ({
+    amount: tier.amount.toString(),
+    description: tier.title
+  }));
+  
+  // Handle tier selection
+  useEffect(() => {
+    if (selectedAmount) {
+      const amount = parseInt(selectedAmount.replace(/,/g, ''));
+      const tierIndex = donationTiers.findIndex(tier => tier.amount === amount);
+      setSelectedTier(tierIndex >= 0 ? tierIndex : null);
+    } else if (customAmount) {
+      const amount = parseInt(customAmount);
+      const tierIndex = donationTiers.findIndex(tier => tier.amount === amount);
+      setSelectedTier(tierIndex >= 0 ? tierIndex : null);
+    } else {
+      setSelectedTier(null);
+    }
+  }, [selectedAmount, customAmount]);
   
   const handleDonate = () => {
     const amount = selectedAmount || customAmount;
@@ -89,6 +130,25 @@ const DonationForm = () => {
               donationType={donationType}
               setDonationType={setDonationType}
             />
+            
+            {/* Display selected tier benefits */}
+            {selectedTier !== null && (
+              <div className="mb-8 p-4 bg-mahathai-light rounded-lg">
+                <div className="flex items-center mb-2">
+                  {React.createElement(donationTiers[selectedTier].icon, { className: "h-5 w-5 text-mahathai-primary mr-2" })}
+                  <h3 className="font-bold">{donationTiers[selectedTier].title}</h3>
+                </div>
+                <p className="text-sm text-gray-600 mb-3">{donationTiers[selectedTier].description}</p>
+                <div>
+                  <h4 className="text-sm font-semibold mb-1">สิทธิประโยชน์ที่คุณจะได้รับ:</h4>
+                  <ul className="list-disc pl-5 text-sm text-gray-700">
+                    {donationTiers[selectedTier].perks.map((perk, index) => (
+                      <li key={index}>{perk}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
             
             <PaymentMethodSection 
               paymentMethod={paymentMethod}
