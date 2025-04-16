@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Search, Users } from "lucide-react";
@@ -36,8 +35,8 @@ const Hero = () => {
           <div className="md:w-1/2 relative">
             <div className="rounded-xl overflow-hidden shadow-2xl relative">
               <img 
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" 
-                alt="เด็กไทยยิ้มแย้มแจ่มใส" 
+                src="/lovable-uploads/33a48354-c45d-4c1c-a9c3-5bb9915a58c1.png" 
+                alt="กลุ่มคนพิการในชุดสีแดง กำลังนั่งร่วมกันด้วยท่าทางสงบ" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
