@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold text-mahathai-primary font-kanit">
+              <span className="text-2xl font-light-300 text-mahathai-primary font-kanit">
                 <span className="text-mahathai-dark">Mahathai</span>-X
               </span>
             </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-kanit font-medium text-lg mb-4">เกี่ยวกับเรา</h3>
+            <h3 className="font-kanit font-light-300 text-lg mb-4">เกี่ยวกับเรา</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-gray-600 hover:text-mahathai-primary transition">
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-kanit font-medium text-lg mb-4">บริการของเรา</h3>
+            <h3 className="font-kanit font-light-300 text-lg mb-4">บริการของเรา</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/start-campaign" className="text-gray-600 hover:text-mahathai-primary transition">
@@ -104,7 +104,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-kanit font-medium text-lg mb-4">ติดต่อเรา</h3>
+            <h3 className="font-kanit font-light-300 text-lg mb-4">ติดต่อเรา</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 text-mahathai-primary mt-1 flex-shrink-0" />

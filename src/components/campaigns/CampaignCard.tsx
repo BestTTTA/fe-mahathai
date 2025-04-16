@@ -53,7 +53,7 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
       
       <CardContent className="p-6">
         <div className="mb-4">
-          <h3 className="text-xl font-bold mb-2 line-clamp-2">
+          <h3 className="text-xl font-light-300 mb-2 line-clamp-2">
             <Link to={`/campaigns/${campaign.id}`} className="hover:text-mahathai-primary transition">
               {campaign.title}
             </Link>
@@ -65,10 +65,10 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
         <div className="space-y-3">
           <div>
             <div className="flex justify-between mb-1">
-              <span className="text-gray-700 font-medium">
+              <span className="text-gray-700 font-light-300">
                 ระดมทุนแล้ว {formatCurrency(campaign.raisedAmount)}
               </span>
-              <span className="text-gray-700 font-medium">
+              <span className="text-gray-700 font-light-300">
                 {progress}%
               </span>
             </div>

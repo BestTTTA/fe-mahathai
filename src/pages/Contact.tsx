@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="bg-mahathai-light py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold text-mahathai-dark mb-4 font-kanit">
+            <h1 className="text-3xl md:text-4xl font-light-300 text-mahathai-dark mb-4 font-kanit">
               ติดต่อเรา
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -39,7 +39,7 @@ const Contact = () => {
                         <MapPin className="w-5 h-5 text-mahathai-primary" />
                       </div>
                       <div>
-                        <h3 className="font-medium text-gray-900 font-kanit text-lg">มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ</h3>
+                        <h3 className="font-light-300 text-gray-900 font-kanit text-lg">มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ</h3>
                         <p className="text-gray-600 mt-1">
                           ที่ตั้ง 440 อาคาร F ชั้น 1 ม.9 ต.หนองปรือ อ.บางละมุง จ.ชลบุรี 20150
                         </p>
@@ -70,7 +70,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                        <div className="w-5 h-5 flex items-center justify-center text-blue-600 font-bold">F</div>
+                        <div className="w-5 h-5 flex items-center justify-center text-blue-600 font-light-300">F</div>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -116,7 +116,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
-                        <div className="w-5 h-5 flex items-center justify-center text-white font-bold">L</div>
+                        <div className="w-5 h-5 flex items-center justify-center text-white font-light-300">L</div>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -129,7 +129,7 @@ const Contact = () => {
 
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center flex-shrink-0">
-                        <div className="w-5 h-5 flex items-center justify-center text-white font-bold">T</div>
+                        <div className="w-5 h-5 flex items-center justify-center text-white font-light-300">T</div>
                       </div>
                       <div>
                         <p className="text-gray-600">
@@ -165,7 +165,7 @@ const Contact = () => {
                   <form className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium text-gray-700">
+                        <label htmlFor="name" className="text-sm font-light-300 text-gray-700">
                           ชื่อ-นามสกุล
                         </label>
                         <input
@@ -175,7 +175,7 @@ const Contact = () => {
                         />
                       </div>
                       <div className="space-y-2">
-                        <label htmlFor="email" className="text-sm font-medium text-gray-700">
+                        <label htmlFor="email" className="text-sm font-light-300 text-gray-700">
                           อีเมล
                         </label>
                         <input
@@ -187,7 +187,7 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                      <label htmlFor="phone" className="text-sm font-light-300 text-gray-700">
                         เบอร์โทรศัพท์
                       </label>
                       <input
@@ -198,7 +198,7 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="subject" className="text-sm font-medium text-gray-700">
+                      <label htmlFor="subject" className="text-sm font-light-300 text-gray-700">
                         เรื่อง
                       </label>
                       <input
@@ -209,7 +209,7 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium text-gray-700">
+                      <label htmlFor="message" className="text-sm font-light-300 text-gray-700">
                         ข้อความ
                       </label>
                       <textarea

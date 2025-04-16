@@ -78,7 +78,7 @@ const CategorySection = () => {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-light-300 mb-4">
             หมวดหมู่การระดมทุน
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -96,7 +96,7 @@ const CategorySection = () => {
               <div className={`${category.color} p-3 rounded-full mb-4`}>
                 {category.icon}
               </div>
-              <h3 className="text-lg font-medium text-center">{category.name}</h3>
+              <h3 className="text-lg font-light-300 text-center">{category.name}</h3>
             </Link>
           ))}
         </div>

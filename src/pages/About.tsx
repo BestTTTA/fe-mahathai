@@ -8,7 +8,7 @@ const About = () => {
       <div className="bg-mahathai-light py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold text-mahathai-dark mb-4 font-kanit">
+            <h1 className="text-3xl md:text-4xl font-light-300 text-mahathai-dark mb-4 font-kanit">
               เกี่ยวกับมูลนิธิฯ
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -19,7 +19,7 @@ const About = () => {
           <div className="mb-12">
             <Card>
               <CardContent className="p-6">
-                <h2 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit text-center">
+                <h2 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit text-center">
                   คณะผู้บริหารมูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ
                 </h2>
 
@@ -34,7 +34,7 @@ const About = () => {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <h3 className="font-bold text-mahathai-dark font-kanit">บาทหลวง สุขุม ธนะสิงห์, C.Ss.R.</h3>
+                      <h3 className="font-light-300 text-mahathai-dark font-kanit">บาทหลวง สุขุม ธนะสิงห์, C.Ss.R.</h3>
                       <p className="text-gray-600">ประธานกรรมการ</p>
                     </div>
                   </div>
@@ -48,7 +48,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-bold text-mahathai-dark font-kanit">บาทหลวง ธนู กระทอง, C.Ss.R.</h3>
+                    <h3 className="font-light-300 text-mahathai-dark font-kanit">บาทหลวง ธนู กระทอง, C.Ss.R.</h3>
                     <p className="text-gray-600">รองประธานกรรมการและเหรัญญิก</p>
                   </div>
 
@@ -60,7 +60,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-bold text-mahathai-dark font-kanit">บาทหลวง วิบูลย์ ลิมปนวุฒิ, C.Ss.R.</h3>
+                    <h3 className="font-light-300 text-mahathai-dark font-kanit">บาทหลวง วิบูลย์ ลิมปนวุฒิ, C.Ss.R.</h3>
                     <p className="text-gray-600">กรรมการ</p>
                   </div>
 
@@ -72,7 +72,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-bold text-mahathai-dark font-kanit">บาทหลวง ก่อเกียรติ ดีศรี, C.Ss.R.</h3>
+                    <h3 className="font-light-300 text-mahathai-dark font-kanit">บาทหลวง ก่อเกียรติ ดีศรี, C.Ss.R.</h3>
                     <p className="text-gray-600">กรรมการ</p>
                   </div>
 
@@ -84,7 +84,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-bold text-mahathai-dark font-kanit">บาทหลวง อภิสิทธิ์ กฤษราลัมณ์, C.Ss.R.</h3>
+                    <h3 className="font-light-300 text-mahathai-dark font-kanit">บาทหลวง อภิสิทธิ์ กฤษราลัมณ์, C.Ss.R.</h3>
                     <p className="text-gray-600">กรรมการ</p>
                   </div>
 
@@ -96,7 +96,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-bold text-mahathai-dark font-kanit">ซิสเตอร์ ภาวิณี พิชัยศรีสวัสดิ์, IJ</h3>
+                    <h3 className="font-light-300 text-mahathai-dark font-kanit">ซิสเตอร์ ภาวิณี พิชัยศรีสวัสดิ์, IJ</h3>
                     <p className="text-gray-600">กรรมการ</p>
                   </div>
 
@@ -108,7 +108,7 @@ const About = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-bold text-mahathai-dark font-kanit">ดร.สุภรธรรม มงคลสวัสดิ์</h3>
+                    <h3 className="font-light-300 text-mahathai-dark font-kanit">ดร.สุภรธรรม มงคลสวัสดิ์</h3>
                     <p className="text-gray-600">กรรมการและเลขาธิการ</p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ const About = () => {
                     </div>
                   </div>
                   <div className="md:w-2/3">
-                    <h2 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">
+                    <h2 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">
                       บาทหลวงเรย์มอนด์ อัลลีน เบรนนัน (พ่อเรย์)
                     </h2>
                     <p className="text-gray-600 mb-4">

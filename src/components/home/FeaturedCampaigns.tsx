@@ -22,7 +22,7 @@ const featuredCampaigns = [
     id: 2,
     title: "ปรับปรุงที่อยู่อาศัยสำหรับผู้พิการในจังหวัดกระบี่",
     description: "ช่วยปรับปรุงบ้านให้เหมาะสมกับการใช้ชีวิตของผู้พิการกว่า 50 ครอบครัวในจังหวัดกระบี่",
-    image: "https://images.unsplash.com/photo-1607748851687-ba9a10438621?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    image: "https://www.krabinoi.go.th/storage/uploads/730-1..jpg",
     raisedAmount: 420000,
     goalAmount: 800000,
     donorsCount: 1253,
@@ -34,7 +34,7 @@ const featuredCampaigns = [
     id: 3,
     title: "โครงการอาหารกลางวันเพื่อเด็กนักเรียนในถิ่นทุรกันดาร",
     description: "จัดหาอาหารกลางวันที่มีคุณค่าทางโภชนาการให้กับเด็กนักเรียนในพื้นที่ห่างไกล",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    image: "https://www.khaosod.co.th/technologychaoban/wp-content/uploads/2020/03/630320_-216.jpg",
     raisedAmount: 340000,
     goalAmount: 500000,
     donorsCount: 987,
@@ -46,7 +46,7 @@ const featuredCampaigns = [
     id: 4,
     title: "โครงการสร้างห้องสมุดชุมชนในพื้นที่ชนบท",
     description: "สร้างแหล่งเรียนรู้และส่งเสริมนิสัยรักการอ่านให้กับเด็กและเยาวชนในพื้นที่ชนบทห่างไกล",
-    image: "https://images.unsplash.com/photo-1583468323330-9032ad490fed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    image: "https://www.taiwisdom.org/libdvlpt/copy_of_localcprt02.jpg",
     raisedAmount: 520000,
     goalAmount: 800000,
     donorsCount: 1120,
@@ -58,7 +58,7 @@ const featuredCampaigns = [
     id: 5,
     title: "โครงการผ่าตัดแก้ไขปากแหว่งเพดานโหว่สำหรับเด็ก",
     description: "ช่วยเหลือเด็กที่มีภาวะปากแหว่งเพดานโหว่ให้ได้รับการผ่าตัดและฟื้นฟูอย่างมีคุณภาพ",
-    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    image: "https://operationsmile.or.th/wp-content/uploads/2023/02/292414911_8440241066001524_5189051223366572609_n-1024x683.jpg",
     raisedAmount: 980000,
     goalAmount: 1500000,
     donorsCount: 2100,
@@ -70,7 +70,7 @@ const featuredCampaigns = [
     id: 6,
     title: "โครงการส่งเสริมอาชีพให้ผู้สูงอายุในชุมชน",
     description: "สร้างโอกาสและพัฒนาทักษะอาชีพให้กับผู้สูงอายุในชุมชนเพื่อสร้างรายได้และคุณค่าในตัวเอง",
-    image: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    image: "https://www.bufai.go.th/dnm_file/news/1725952733037_7770_center.jpg",
     raisedAmount: 450000,
     goalAmount: 700000,
     donorsCount: 850,
@@ -86,7 +86,7 @@ const FeaturedCampaigns = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-light-300 mb-4">
               แคมเปญแนะนำ
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl">

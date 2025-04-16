@@ -123,7 +123,7 @@ const DonationForm = () => {
                 className="w-16 h-16 rounded-md object-cover mr-4"
               />
               <div>
-                <h2 className="font-medium text-lg">ร่วมบริจาค</h2>
+                <h2 className="font-light-300 text-lg">ร่วมบริจาค</h2>
                 <p className="text-sm text-gray-600">{campaign.title}</p>
               </div>
             </div>
@@ -142,7 +142,7 @@ const DonationForm = () => {
               <div className="mb-8 p-4 bg-mahathai-light rounded-lg">
                 <div className="flex items-center mb-2">
                   {React.createElement(donationTiers[selectedTier].icon, { className: "h-5 w-5 text-mahathai-primary mr-2" })}
-                  <h3 className="font-bold">{donationTiers[selectedTier].title}</h3>
+                  <h3 className="font-light-300">{donationTiers[selectedTier].title}</h3>
                 </div>
                 <p className="text-sm text-gray-600 mb-3">{donationTiers[selectedTier].description}</p>
                 <div>

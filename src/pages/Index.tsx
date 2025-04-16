@@ -27,7 +27,7 @@ const Index = () => {
       {/* Quick links to our sample campaign for demo purposes */}
       <div className="bg-mahathai-light py-6">
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-xl font-bold mb-4">ทดลองดูแคมเปญตัวอย่าง</h3>
+          <h3 className="text-xl font-light-300 mb-4">ทดลองดูแคมเปญตัวอย่าง</h3>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
               to="/campaigns" 

@@ -14,7 +14,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const getLinkClasses = (path: string) => {
-    return `text-gray-700 font-medium transition 
+    return `text-gray-700 font-light-300 transition 
       ${location.pathname === path 
         ? 'text-mahathai-primary' 
         : 'hover:text-mahathai-primary'}`;
@@ -96,35 +96,35 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link 
               to="/campaigns" 
-              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >
               แคมเปญทั้งหมด
             </Link>
             <Link 
               to="/donation" 
-              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >
               หมวดหมู่
             </Link>
             <Link 
               to="/news" 
-              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >
               ข่าวสารและกิจกรรม
             </Link>
             <Link 
               to="/about" 
-              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >
               เกี่ยวกับเรา
             </Link>
             <Link 
               to="/contact" 
-              className="text-gray-700 hover:text-mahathai-primary font-medium py-2 transition"
+              className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >
               ติดต่อเรา

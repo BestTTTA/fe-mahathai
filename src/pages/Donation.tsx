@@ -22,7 +22,7 @@ const DonationPage = () => {
       <div className="bg-mahathai-light py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold text-mahathai-dark mb-4 font-kanit">
+            <h1 className="text-3xl md:text-4xl font-light-300 text-mahathai-dark mb-4 font-kanit">
               บริจาค
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -32,7 +32,7 @@ const DonationPage = () => {
 
           {/* Donation Options */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-center text-mahathai-dark font-kanit">
+            <h2 className="text-2xl font-light-300 mb-6 text-center text-mahathai-dark font-kanit">
               รูปแบบและรายละเอียดการสนับสนุน
             </h2>
             
@@ -147,11 +147,11 @@ const DonationPage = () => {
             </TabsList>
             
             <TabsContent value="money" className="border rounded-lg p-6 bg-white">
-              <h3 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">ร่วมบริจาคผ่านช่องทางดังนี้</h3>
+              <h3 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">ร่วมบริจาคผ่านช่องทางดังนี้</h3>
               
               <div className="space-y-6">
-                <div>
-                  <h4 className="text-lg font-medium mb-3 text-mahathai-dark">1. โอนเงินเข้าบัญชี มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ</h4>
+                {/* <div>
+                  <h4 className="text-lg font-light-300 mb-3 text-mahathai-dark">1. โอนเงินเข้าบัญชี มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ</h4>
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <Card className="bg-gray-50">
@@ -184,10 +184,10 @@ const DonationPage = () => {
                       </CardContent>
                     </Card>
                   </div>
-                </div>
+                </div> */}
                 
                 <div>
-                  <h4 className="text-lg font-medium mb-3 text-mahathai-dark">2. บริจาคผ่าน พร้อมเพย์ (Prompt Pay) สแกน QR code ด้านล่าง</h4>
+                  <h4 className="text-lg font-light-300 mb-3 text-mahathai-dark">บริจาคผ่าน พร้อมเพย์ (Prompt Pay) สแกน QR code ด้านล่าง</h4>
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <Card className="bg-gray-50">
@@ -239,11 +239,11 @@ const DonationPage = () => {
             </TabsContent>
             
             <TabsContent value="goods" className="border rounded-lg p-6 bg-white">
-              <h3 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">ร่วมบริจาคสิ่งของอุปโภคบริโภคและอุปกรณ์การเรียนการสอน</h3>
+              <h3 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">ร่วมบริจาคสิ่งของอุปโภคบริโภคและอุปกรณ์การเรียนการสอน</h3>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="text-lg font-medium mb-4 text-mahathai-dark">สิ่งของที่รับบริจาค</h4>
+                  <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">สิ่งของที่รับบริจาค</h4>
                   
                   <ol className="space-y-4 list-decimal list-inside text-gray-700">
                     <li>สามารถสนับสนุนของใช้ที่จำเป็น เช่น ผ้าอ้อมผู้ใหญ่ กระดาษทิชชู่ และของใช้จำเป็นอื่นๆ</li>
@@ -254,7 +254,7 @@ const DonationPage = () => {
                 
                 <Card>
                   <CardContent className="pt-6">
-                    <h4 className="text-lg font-medium mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
+                    <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
                     
                     <div className="space-y-3">
                       <div className="flex gap-3">
@@ -276,7 +276,7 @@ const DonationPage = () => {
                       </div>
                       
                       <div className="flex gap-3">
-                        <div className="w-5 h-5 flex items-center justify-center bg-green-500 rounded-sm text-white text-xs font-bold flex-shrink-0">L</div>
+                        <div className="w-5 h-5 flex items-center justify-center bg-green-500 rounded-sm text-white text-xs font-light-300 flex-shrink-0">L</div>
                         <div>
                           <p className="text-gray-700">
                             Line: มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ
@@ -290,7 +290,7 @@ const DonationPage = () => {
             </TabsContent>
             
             <TabsContent value="scholarship" className="border rounded-lg p-6 bg-white">
-              <h3 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">ร่วมทุนการศึกษา</h3>
+              <h3 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">ร่วมทุนการศึกษา</h3>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
@@ -301,7 +301,7 @@ const DonationPage = () => {
                 
                 <Card>
                   <CardContent className="pt-6">
-                    <h4 className="text-lg font-medium mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
+                    <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
                     
                     <div className="space-y-3">
                       <div className="flex gap-3">
@@ -337,11 +337,11 @@ const DonationPage = () => {
             </TabsContent>
             
             <TabsContent value="food" className="border rounded-lg p-6 bg-white">
-              <h3 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">ร่วมเลี้ยงอาหารกลางวันคนพิการ</h3>
+              <h3 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">ร่วมเลี้ยงอาหารกลางวันคนพิการ</h3>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h4 className="text-lg font-medium mb-4 text-mahathai-dark">ร่วมเลี้ยงอาหารกลางวันคนพิการ รายละเอียด ดังนี้ เลี้ยงอาหาร 5,000 บาท/มื้อ</h4>
+                  <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">ร่วมเลี้ยงอาหารกลางวันคนพิการ รายละเอียด ดังนี้ เลี้ยงอาหาร 5,000 บาท/มื้อ</h4>
                   
                   <ol className="space-y-4 list-decimal list-inside text-gray-700">
                     <li>วิทยาลัยเทคโนโลยีพระมหาไถ่ พัทยา<br />
@@ -360,7 +360,7 @@ const DonationPage = () => {
                 
                 <Card>
                   <CardContent className="pt-6">
-                    <h4 className="text-lg font-medium mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
+                    <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
                     
                     <div className="space-y-3">
                       <div className="flex gap-3">
@@ -396,7 +396,7 @@ const DonationPage = () => {
             </TabsContent>
             
             <TabsContent value="employment" className="border rounded-lg p-6 bg-white">
-              <h3 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">การจ้างงานคนพิการ</h3>
+              <h3 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">การจ้างงานคนพิการ</h3>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
@@ -406,7 +406,7 @@ const DonationPage = () => {
                   
                   <div className="space-y-4">
                     <div>
-                      <h5 className="font-medium text-mahathai-dark mb-2">(มาตรา 33)</h5>
+                      <h5 className="font-light-300 text-mahathai-dark mb-2">(มาตรา 33)</h5>
                       <p className="text-gray-700">
                         ท่านสามารถจ้างนักเรียนคนพิการไปทำงานที่สถานประกอบการของท่านโดยตรง หรือทำงานเพื่อประโยชน์สาธารณะ โดยเรามีนักศึกษาที่จบพร้อมทำงานในหลักสูตร ดังนี้
                       </p>
@@ -428,7 +428,7 @@ const DonationPage = () => {
                     </div>
                     
                     <div>
-                      <h5 className="font-medium text-mahathai-dark mb-2">ฝึกงาน (มาตรา 35)</h5>
+                      <h5 className="font-light-300 text-mahathai-dark mb-2">ฝึกงาน (มาตรา 35)</h5>
                       <p className="text-gray-700">
                         โดยมีหลักสูตรให้เลือกดังนี้
                       </p>
@@ -448,7 +448,7 @@ const DonationPage = () => {
                 
                 <Card>
                   <CardContent className="pt-6">
-                    <h4 className="text-lg font-medium mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการจ้างงานคนพิการ สามารถติดต่อได้ตามรายละเอียด</h4>
+                    <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการจ้างงานคนพิการ สามารถติดต่อได้ตามรายละเอียด</h4>
                     
                     <div className="space-y-3">
                       <div className="flex gap-3">
@@ -482,7 +482,7 @@ const DonationPage = () => {
                 </Card>
                 
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h5 className="font-medium text-mahathai-dark mb-3">กฎหมายที่เกี่ยวข้อง</h5>
+                  <h5 className="font-light-300 text-mahathai-dark mb-3">กฎหมายที่เกี่ยวข้อง</h5>
                   <p className="text-gray-700 mb-3">
                     พระราชบัญญัติส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการ พ.ศ.2550 และที่แก้ไขเพิ่มเติม (ฉบับที่ 2) พ.ศ. 2556 มีการกำหนดใน 3 มาตรา คือ มาตรา 33 มาตรา 34 มาตรา 35 ที่มีเจตนารมณ์ให้คนพิการได้มีโอกาสใช้ความสามารถในการมีรายได้และพึ่งพาตนเองลดภาระของครอบครัวและสังคม ประกอบด้วย
                   </p>
@@ -503,7 +503,7 @@ const DonationPage = () => {
             </TabsContent>
             
             <TabsContent value="donation-box" className="border rounded-lg p-6 bg-white">
-              <h3 className="text-xl font-bold mb-4 text-mahathai-dark font-kanit">ร่วมวางตู้บริจาค</h3>
+              <h3 className="text-xl font-light-300 mb-4 text-mahathai-dark font-kanit">ร่วมวางตู้บริจาค</h3>
               
               <div className="space-y-6">
                 <div className="bg-gray-50 p-6 rounded-lg">
@@ -514,7 +514,7 @@ const DonationPage = () => {
                 
                 <Card>
                   <CardContent className="pt-6">
-                    <h4 className="text-lg font-medium mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
+                    <h4 className="text-lg font-light-300 mb-4 text-mahathai-dark">สำหรับท่านใดที่ต้องการสนับสนุน สามารถติดต่อได้ตามรายละเอียด</h4>
                     
                     <div className="space-y-3">
                       <div className="flex gap-3">
@@ -552,7 +552,7 @@ const DonationPage = () => {
 
           {/* Call to Action */}
           <div className="bg-mahathai-secondary/10 p-8 rounded-lg text-center">
-            <h3 className="text-xl font-bold mb-3 text-mahathai-dark font-kanit">
+            <h3 className="text-xl font-light-300 mb-3 text-mahathai-dark font-kanit">
               ร่วมเป็นส่วนหนึ่งในการเปลี่ยนแปลงชีวิตคนพิการให้ดีขึ้น
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">

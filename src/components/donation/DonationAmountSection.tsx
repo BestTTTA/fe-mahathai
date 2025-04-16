@@ -76,8 +76,8 @@ const DonationAmountSection = ({
                 }}
               >
                 <div className="flex justify-between items-center mb-1">
-                  <div className="text-xl font-bold">{tier.amount} บาท</div>
-                  <div className="text-sm font-medium text-mahathai-primary">{tier.title}</div>
+                  <div className="text-xl font-light-300">{tier.amount} บาท</div>
+                  <div className="text-sm font-light-300 text-mahathai-primary">{tier.title}</div>
                 </div>
                 <div className="text-sm text-gray-600">{tier.description}</div>
               </div>
@@ -114,8 +114,8 @@ const DonationAmountSection = ({
                 }}
               >
                 <div className="flex justify-between items-center mb-1">
-                  <div className="text-xl font-bold">{tier.amount} บาท / เดือน</div>
-                  <div className="text-sm font-medium text-mahathai-primary">{tier.title}</div>
+                  <div className="text-xl font-light-300">{tier.amount} บาท / เดือน</div>
+                  <div className="text-sm font-light-300 text-mahathai-primary">{tier.title}</div>
                 </div>
                 <div className="text-sm text-gray-600">{tier.description}</div>
               </div>

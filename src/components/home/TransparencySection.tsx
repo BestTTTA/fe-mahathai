@@ -36,7 +36,7 @@ const TransparencySection = () => {
     <section className="py-16 bg-mahathai-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-light-300 mb-4">
             ความโปร่งใสคือหัวใจของเรา
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -51,7 +51,7 @@ const TransparencySection = () => {
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-light-300 mb-3">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
@@ -60,7 +60,7 @@ const TransparencySection = () => {
         <div className="mt-12 text-center">
           <Link 
             to="/verification" 
-            className="inline-flex items-center text-mahathai-primary hover:text-mahathai-secondary font-medium"
+            className="inline-flex items-center text-mahathai-primary hover:text-mahathai-secondary font-light-300"
           >
             เรียนรู้เพิ่มเติมเกี่ยวกับกระบวนการตรวจสอบของเรา
             <ArrowUpRight className="ml-2 h-4 w-4" />

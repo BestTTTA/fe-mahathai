@@ -32,7 +32,7 @@ const ImpactSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-light-300 mb-6">
               ผลกระทบของเราต่อสังคมไทย
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -45,7 +45,7 @@ const ImpactSection = () => {
                 <div key={index} className="bg-gray-50 p-4 rounded-lg">
                   <div className="flex items-center gap-3 mb-2">
                     {stat.icon}
-                    <span className="text-2xl md:text-3xl font-bold text-mahathai-dark">
+                    <span className="text-2xl md:text-3xl font-light-300 text-mahathai-dark">
                       {stat.value}
                     </span>
                   </div>
@@ -75,7 +75,7 @@ const ImpactSection = () => {
                 <HandCoins className="h-12 w-12 text-mahathai-primary" />
                 <div>
                   <p className="text-gray-600">ค่าดำเนินการเฉลี่ย</p>
-                  <p className="text-2xl font-bold text-mahathai-dark">เพียง 2%</p>
+                  <p className="text-2xl font-light-300 text-mahathai-dark">เพียง 2%</p>
                   <p className="text-sm text-green-600">ต่ำกว่าค่าเฉลี่ยอุตสาหกรรม</p>
                 </div>
               </div>

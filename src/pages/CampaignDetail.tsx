@@ -91,16 +91,16 @@ const CampaignDetail = () => {
             
             {/* Donation Tiers */}
             <div className="mt-8">
-              <h3 className="text-2xl font-bold mb-6">ระดับการสนับสนุน</h3>
+              <h3 className="text-2xl font-light-300 mb-6">ระดับการสนับสนุน</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {campaign.donationTiers.map((tier, index) => (
                   <Card key={index} className="overflow-hidden border-2 hover:border-mahathai-primary transition-all hover:shadow-md">
                     <div className="bg-mahathai-light p-4 flex justify-between items-center">
-                      <h4 className="font-bold text-lg">{tier.title}</h4>
+                      <h4 className="font-light-300 text-lg">{tier.title}</h4>
                       <tier.icon className="h-6 w-6 text-mahathai-primary" />
                     </div>
                     <CardContent className="p-6">
-                      <div className="text-2xl font-bold mb-2 text-mahathai-primary">
+                      <div className="text-2xl font-light-300 mb-2 text-mahathai-primary">
                         {tier.amount.toLocaleString()} บาท
                       </div>
                       <p className="text-gray-600 mb-4">{tier.description}</p>

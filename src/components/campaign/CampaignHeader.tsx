@@ -50,7 +50,7 @@ const CampaignHeader = ({ campaign }: CampaignHeaderProps) => {
         </button>
       </div>
       
-      <h1 className="text-2xl md:text-3xl font-bold mb-4">{campaign.title}</h1>
+      <h1 className="text-2xl md:text-3xl font-light-300 mb-4">{campaign.title}</h1>
       
       <div className="flex items-center mb-6">
         <img 
@@ -60,7 +60,7 @@ const CampaignHeader = ({ campaign }: CampaignHeaderProps) => {
         />
         <div>
           <p className="text-sm text-gray-600">โดย</p>
-          <p className="font-medium">{campaign.organizer}</p>
+          <p className="font-light-300">{campaign.organizer}</p>
         </div>
       </div>
     </div>

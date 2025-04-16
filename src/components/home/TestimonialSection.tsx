@@ -52,7 +52,7 @@ const TestimonialSection = () => {
     <section className="py-16 bg-mahathai-dark text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-light-300old mb-4">
             เสียงจากชุมชนของเรา
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl">
@@ -75,7 +75,7 @@ const TestimonialSection = () => {
                   alt={current.name} 
                   className="w-16 h-16 rounded-full mb-4 border-2 border-mahathai-primary" 
                 />
-                <h4 className="text-lg font-medium">{current.name}</h4>
+                <h4 className="text-lg font-light-300">{current.name}</h4>
                 <p className="text-gray-400">{current.position}</p>
               </div>
             </div>

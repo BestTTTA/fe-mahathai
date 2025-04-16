@@ -107,7 +107,7 @@ const Campaigns = () => {
     <Layout>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">แคมเปญระดมทุน</h1>
+          <h1 className="text-3xl font-light-300 mb-2">แคมเปญระดมทุน</h1>
           <p className="text-gray-600">ร่วมสนับสนุนโครงการที่สร้างการเปลี่ยนแปลงให้กับสังคม</p>
         </div>
         
@@ -147,15 +147,6 @@ const Campaigns = () => {
           </div>
           
           <Tabs defaultValue="all">
-            <TabsList className="mb-6">
-              <TabsTrigger value="all">ทั้งหมด</TabsTrigger>
-              <TabsTrigger value="education">การศึกษา</TabsTrigger>
-              <TabsTrigger value="health">สาธารณสุข</TabsTrigger>
-              <TabsTrigger value="environment">สิ่งแวดล้อม</TabsTrigger>
-              <TabsTrigger value="disaster">ภัยพิบัติ</TabsTrigger>
-              <TabsTrigger value="agriculture">เกษตรกรรม</TabsTrigger>
-            </TabsList>
-            
             <TabsContent value="all" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredCampaigns.map(campaign => (
                 <CampaignCard key={campaign.id} campaign={campaign} />

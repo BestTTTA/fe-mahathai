@@ -27,10 +27,10 @@ const DonationCard = ({ campaignId, raisedAmount, goalAmount, donorsCount, daysL
     <div className="bg-white rounded-lg shadow-lg p-6 sticky top-24">
       <div className="mb-4">
         <div className="flex justify-between mb-1">
-          <span className="text-lg font-bold text-gray-700">
+          <span className="text-lg font-light-300 text-gray-700">
             {formatCurrency(raisedAmount)}
           </span>
-          <span className="text-gray-700 font-medium">
+          <span className="text-gray-700 font-light-300">
             {progress}%
           </span>
         </div>

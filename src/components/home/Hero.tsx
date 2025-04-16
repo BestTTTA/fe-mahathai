@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-mahathai-dark">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 text-mahathai-dark">
               สร้างการเปลี่ยนแปลงให้กับ <span className="text-mahathai-primary">สังคมไทย</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -42,14 +42,14 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">ช่วยเหลือเด็กด้อยโอกาสในจังหวัดเชียงใหม่</h3>
+                <h3 className="text-xl font-light-300 mb-2">ช่วยเหลือเด็กด้อยโอกาสในจังหวัดเชียงใหม่</h3>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
                     <Heart className="h-5 w-5 mr-1 text-red-400" fill="currentColor" />
                     <span>2,546 ผู้สนับสนุน</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-mahathai-accent font-bold">85%</span>
+                    <span className="text-mahathai-accent font-light-300">85%</span>
                     <span className="ml-1">สำเร็จแล้ว</span>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Hero = () => {
                 <Users className="h-10 w-10 text-mahathai-primary" />
                 <div>
                   <p className="text-gray-700">ผู้สนับสนุนทั้งหมด</p>
-                  <p className="text-2xl font-bold text-mahathai-dark">152,487</p>
+                  <p className="text-2xl font-light-300 text-mahathai-dark">152,487</p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Hero = () => {
                 <Heart className="h-10 w-10 text-red-500" />
                 <div>
                   <p className="text-gray-700">ยอดบริจาคทั้งหมด</p>
-                  <p className="text-2xl font-bold text-mahathai-dark">฿15.6M</p>
+                  <p className="text-2xl font-light-300 text-mahathai-dark">฿15.6M</p>
                 </div>
               </div>
             </div>

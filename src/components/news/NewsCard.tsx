@@ -20,7 +20,7 @@ const NewsCard = ({ image, title, url }: NewsCardProps) => {
           />
         </div>
         <CardContent className="p-4">
-          <h3 className="font-medium text-mahathai-dark line-clamp-3 min-h-[4.5rem]">
+          <h3 className="font-light-300 text-mahathai-dark line-clamp-3 min-h-[4.5rem]">
             {title}
           </h3>
           <Link 
