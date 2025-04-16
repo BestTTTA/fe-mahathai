@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -87,7 +86,6 @@ const config = {
         "float": "float 3s ease-in-out infinite",
       },
       fontFamily: {
-        'kanit': ['Kanit', 'sans-serif'],
         'mitr': ['Mitr', 'sans-serif'],
       },
     },
