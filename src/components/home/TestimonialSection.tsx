@@ -86,7 +86,7 @@ const TestimonialSection = () => {
               variant="outline" 
               size="icon" 
               onClick={prevTestimonial}
-              className="border-gray-700 hover:bg-gray-800 text-white"
+              className="border-gray-700 hover:bg-gray-800 text-black"
             >
               <ArrowLeft className="h-5 w-5" />
               <span className="sr-only">Previous testimonial</span>
@@ -107,7 +107,7 @@ const TestimonialSection = () => {
               variant="outline" 
               size="icon" 
               onClick={nextTestimonial}
-              className="border-gray-700 hover:bg-gray-800 text-white"
+              className="border-gray-700 hover:bg-gray-800 text-black"
             >
               <ArrowRight className="h-5 w-5" />
               <span className="sr-only">Next testimonial</span>
