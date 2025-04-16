@@ -10,7 +10,7 @@ const featuredCampaigns = [
     id: 1,
     title: "ช่วยเหลือเด็กด้อยโอกาสในจังหวัดเชียงใหม่",
     description: "สนับสนุนการศึกษาและพัฒนาทักษะชีวิตให้กับเด็กด้อยโอกาสกว่า 200 คนในจังหวัดเชียงใหม่",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.over24h.shop/files/1744783713_634e14e7-5210-4541-bb94-f31a247ef4c7.png",
     raisedAmount: 850000,
     goalAmount: 1000000,
     donorsCount: 2546,
