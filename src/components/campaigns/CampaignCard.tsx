@@ -41,7 +41,7 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
       <div className="relative">
         <Link to={`/campaigns/${campaign.id}`}>
           <img 
-            src="/lovable-uploads/49f97dc6-c1d5-41ac-83bb-600165411a78.png" 
+            src={campaign.image} 
             alt={campaign.title} 
             className="w-full h-48 object-cover"
           />
