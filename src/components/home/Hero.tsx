@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="md:w-1/2 relative">
             <div className="rounded-xl overflow-hidden shadow-2xl relative">
               <img 
-                src="/lovable-uploads/33a48354-c45d-4c1c-a9c3-5bb9915a58c1.png" 
+                src="https://upload.over24h.shop/files/1744783713_634e14e7-5210-4541-bb94-f31a247ef4c7.png" 
                 alt="เด็กนักเรียนหลากหลายวัยนั่งรับประทานอาหารร่วมกันในโรงอาหาร" 
                 className="w-full h-auto object-cover"
               />
