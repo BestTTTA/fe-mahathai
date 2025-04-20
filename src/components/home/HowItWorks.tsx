@@ -5,22 +5,22 @@ import { Button } from "@/components/ui/button";
 
 const steps = [
   {
-    icon: <CheckCircle2 className="h-12 w-12 text-mahathai-primary" />,
+    icon: <CheckCircle2 className="h-12 w-12 text-mahatai-primary" />,
     title: "ผ่านการตรวจสอบอย่างเข้มงวด",
     description: "ทุกแคมเปญได้รับการคัดกรองและตรวจสอบโดยทีมผู้เชี่ยวชาญเพื่อความโปร่งใสและความน่าเชื่อถือ"
   },
   {
-    icon: <FileSpreadsheet className="h-12 w-12 text-mahathai-primary" />,
+    icon: <FileSpreadsheet className="h-12 w-12 text-mahatai-primary" />,
     title: "สร้างเรื่องราวที่ทรงพลัง",
     description: "สร้างแคมเปญที่บอกเล่าเรื่องราวอย่างมีประสิทธิภาพด้วยเครื่องมือที่ใช้งานง่ายและเข้าถึงผู้สนับสนุนได้มากขึ้น"
   },
   {
-    icon: <Users className="h-12 w-12 text-mahathai-primary" />,
+    icon: <Users className="h-12 w-12 text-mahatai-primary" />,
     title: "ขยายการเข้าถึง",
-    description: "แชร์แคมเปญไปยังเครือข่ายสังคมออนไลน์และได้รับการสนับสนุนจากชุมชน Mahathai-X ที่กำลังเติบโต"
+    description: "แชร์แคมเปญไปยังเครือข่ายสังคมออนไลน์และได้รับการสนับสนุนจากชุมชน mahatai-X ที่กำลังเติบโต"
   },
   {
-    icon: <CreditCard className="h-12 w-12 text-mahathai-primary" />,
+    icon: <CreditCard className="h-12 w-12 text-mahatai-primary" />,
     title: "รับเงินบริจาคได้อย่างปลอดภัย",
     description: "รับเงินบริจาคผ่านระบบการชำระเงินที่หลากหลายและปลอดภัย พร้อมติดตามความคืบหน้าแบบเรียลไทม์"
   }
@@ -32,7 +32,7 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-light-300 mb-4">
-            วิธีการทำงานของ Mahathai-X
+            วิธีการทำงานของ mahatai-X
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             แพลตฟอร์มของเราออกแบบมาเพื่อให้การระดมทุนเป็นเรื่องง่ายและมีประสิทธิภาพ ทั้งสำหรับผู้จัดแคมเปญและผู้บริจาค
@@ -59,7 +59,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
+          <Button size="lg" className="bg-mahatai-primary hover:bg-mahatai-secondary" asChild>
             <Link to="/how-it-works">
               เรียนรู้เพิ่มเติม
               <ArrowRight className="ml-2 h-4 w-4" />

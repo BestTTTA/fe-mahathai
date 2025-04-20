@@ -46,7 +46,7 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
             className="w-full h-48 object-cover"
           />
         </Link>
-        <Badge className="absolute top-3 left-3 bg-mahathai-primary hover:bg-mahathai-secondary">
+        <Badge className="absolute top-3 left-3 bg-mahatai-primary hover:bg-mahatai-secondary">
           {campaign.category}
         </Badge>
       </div>
@@ -54,7 +54,7 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
       <CardContent className="p-6">
         <div className="mb-4">
           <h3 className="text-xl font-light-300 mb-2 line-clamp-2">
-            <Link to={`/campaigns/${campaign.id}`} className="hover:text-mahathai-primary transition">
+            <Link to={`/campaigns/${campaign.id}`} className="hover:text-mahatai-primary transition">
               {campaign.title}
             </Link>
           </h3>
@@ -97,7 +97,7 @@ const CampaignCard = ({ campaign }: CampaignProps) => {
               <span>เรื่องราว</span>
             </Link>
           </Button>
-          <Button className="w-full bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
+          <Button className="w-full bg-mahatai-primary hover:bg-mahatai-secondary" asChild>
             <Link to={`/campaigns/${campaign.id}/donate`} className="flex items-center justify-center">
               <span>ร่วมบริจาค</span>
               <ArrowRight className="ml-2 h-4 w-4" />

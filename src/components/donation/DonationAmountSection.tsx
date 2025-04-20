@@ -69,7 +69,7 @@ const DonationAmountSection = ({
             {donationTiers.map((tier) => (
               <div 
                 key={tier.amount}
-                className={`border ${selectedAmount === tier.amount ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors`}
+                className={`border ${selectedAmount === tier.amount ? 'border-mahatai-primary bg-mahatai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahatai-primary transition-colors`}
                 onClick={() => {
                   setSelectedAmount(tier.amount);
                   setCustomAmount("");
@@ -77,7 +77,7 @@ const DonationAmountSection = ({
               >
                 <div className="flex justify-between items-center mb-1">
                   <div className="text-xl font-light-300">{tier.amount} บาท</div>
-                  <div className="text-sm font-light-300 text-mahathai-primary">{tier.title}</div>
+                  <div className="text-sm font-light-300 text-mahatai-primary">{tier.title}</div>
                 </div>
                 <div className="text-sm text-gray-600">{tier.description}</div>
               </div>
@@ -107,7 +107,7 @@ const DonationAmountSection = ({
             {donationTiers.map((tier) => (
               <div 
                 key={tier.amount}
-                className={`border ${selectedAmount === tier.amount ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors`}
+                className={`border ${selectedAmount === tier.amount ? 'border-mahatai-primary bg-mahatai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahatai-primary transition-colors`}
                 onClick={() => {
                   setSelectedAmount(tier.amount);
                   setCustomAmount("");
@@ -115,7 +115,7 @@ const DonationAmountSection = ({
               >
                 <div className="flex justify-between items-center mb-1">
                   <div className="text-xl font-light-300">{tier.amount} บาท / เดือน</div>
-                  <div className="text-sm font-light-300 text-mahathai-primary">{tier.title}</div>
+                  <div className="text-sm font-light-300 text-mahatai-primary">{tier.title}</div>
                 </div>
                 <div className="text-sm text-gray-600">{tier.description}</div>
               </div>

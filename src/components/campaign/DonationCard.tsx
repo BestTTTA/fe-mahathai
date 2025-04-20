@@ -53,7 +53,7 @@ const DonationCard = ({ campaignId, raisedAmount, goalAmount, donorsCount, daysL
         </div>
       </div>
       
-      <Button className="w-full bg-mahathai-primary hover:bg-mahathai-secondary mb-4" asChild>
+      <Button className="w-full bg-mahatai-primary hover:bg-mahatai-secondary mb-4" asChild>
         <Link to={`/campaigns/${campaignId}/donate`} className="flex items-center justify-center">
           <span>ร่วมบริจาค</span>
           <ArrowRight className="ml-2 h-4 w-4" />

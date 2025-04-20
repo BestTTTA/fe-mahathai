@@ -7,13 +7,13 @@ const Navbar = () => {
   const location = useLocation();
   const getLinkClasses = (path: string) => {
     return `text-gray-700 font-light-300 transition 
-      ${location.pathname === path ? 'text-mahathai-primary' : 'hover:text-mahathai-primary'}`;
+      ${location.pathname === path ? 'text-mahatai-primary' : 'hover:text-mahatai-primary'}`;
   };
   return <header className="w-full bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-light-300 text-mahathai-primary font-mitr font-bold">
-            <span className="text-mahathai-dark">Mahathai</span>-X
+          <span className="text-2xl font-light-300 text-mahatai-primary font-mitr font-bold">
+            <span className="text-mahatai-dark">mahatai</span>-X
           </span>
         </Link>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
               <span>เข้าสู่ระบบ</span>
             </Link>
           </Button>
-          <Button className="bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
+          <Button className="bg-mahatai-primary hover:bg-mahatai-secondary" asChild>
             <Link to="/donation">เริ่มต้นบริจาค</Link>
           </Button>
         </div>
@@ -60,19 +60,19 @@ const Navbar = () => {
       
       {isMenuOpen && <div className="md:hidden bg-white shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <Link to="/campaigns" className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/campaigns" className="text-gray-700 hover:text-mahatai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
               แคมเปญทั้งหมด
             </Link>
-            <Link to="/donation" className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/donation" className="text-gray-700 hover:text-mahatai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
               หมวดหมู่
             </Link>
-            <Link to="/news" className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/news" className="text-gray-700 hover:text-mahatai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
               ข่าวสารและกิจกรรม
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/about" className="text-gray-700 hover:text-mahatai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
               เกี่ยวกับเรา
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-mahathai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
+            <Link to="/contact" className="text-gray-700 hover:text-mahatai-primary font-light-300 py-2 transition" onClick={() => setIsMenuOpen(false)}>
               ติดต่อเรา
             </Link>
             <hr className="border-gray-200" />
@@ -82,7 +82,7 @@ const Navbar = () => {
                   เข้าสู่ระบบ
                 </Link>
               </Button>
-              <Button className="flex-1 bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
+              <Button className="flex-1 bg-mahatai-primary hover:bg-mahatai-secondary" asChild>
                 <Link to="/donation" onClick={() => setIsMenuOpen(false)}>
                   เริ่มต้นบริจาค
                 </Link>

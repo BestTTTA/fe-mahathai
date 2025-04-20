@@ -5,22 +5,22 @@ import { HandHeart, Users, LucideHome, School, HandCoins } from "lucide-react";
 
 const stats = [
   {
-    icon: <HandHeart className="h-8 w-8 text-mahathai-primary" />,
+    icon: <HandHeart className="h-8 w-8 text-mahatai-primary" />,
     value: "125M",
     label: "บาทที่ระดมทุน"
   },
   {
-    icon: <Users className="h-8 w-8 text-mahathai-primary" />,
+    icon: <Users className="h-8 w-8 text-mahatai-primary" />,
     value: "50,000+",
     label: "ผู้ได้รับความช่วยเหลือ"
   },
   {
-    icon: <School className="h-8 w-8 text-mahathai-primary" />,
+    icon: <School className="h-8 w-8 text-mahatai-primary" />,
     value: "200+",
     label: "โรงเรียนได้รับการสนับสนุน"
   },
   {
-    icon: <LucideHome className="h-8 w-8 text-mahathai-primary" />,
+    icon: <LucideHome className="h-8 w-8 text-mahatai-primary" />,
     value: "800+",
     label: "บ้านที่ได้รับการปรับปรุง"
   },
@@ -36,7 +36,7 @@ const ImpactSection = () => {
               ผลกระทบของเราต่อสังคมไทย
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Mahathai-X ไม่ได้เป็นเพียงแพลตฟอร์มระดมทุน แต่เป็นการเคลื่อนไหวเพื่อสร้างการเปลี่ยนแปลงที่ยั่งยืนในสังคมไทย 
+              mahatai-X ไม่ได้เป็นเพียงแพลตฟอร์มระดมทุน แต่เป็นการเคลื่อนไหวเพื่อสร้างการเปลี่ยนแปลงที่ยั่งยืนในสังคมไทย 
               ด้วยการร่วมมือกับผู้คนนับแสนคน เราได้สร้างผลกระทบเชิงบวกในหลายพื้นที่ทั่วประเทศ
             </p>
             
@@ -45,7 +45,7 @@ const ImpactSection = () => {
                 <div key={index} className="bg-gray-50 p-4 rounded-lg">
                   <div className="flex items-center gap-3 mb-2">
                     {stat.icon}
-                    <span className="text-2xl md:text-3xl font-light-300 text-mahathai-dark">
+                    <span className="text-2xl md:text-3xl font-light-300 text-mahatai-dark">
                       {stat.value}
                     </span>
                   </div>
@@ -54,7 +54,7 @@ const ImpactSection = () => {
               ))}
             </div>
             
-            <Button size="lg" className="bg-mahathai-primary hover:bg-mahathai-secondary" asChild>
+            <Button size="lg" className="bg-mahatai-primary hover:bg-mahatai-secondary" asChild>
               <Link to="/impact">
                 ดูข้อมูลผลกระทบเพิ่มเติม
               </Link>
@@ -72,10 +72,10 @@ const ImpactSection = () => {
             
             <div className="absolute -bottom-8 -left-8 bg-white rounded-lg shadow-lg p-5 animate-float">
               <div className="flex items-center gap-3">
-                <HandCoins className="h-12 w-12 text-mahathai-primary" />
+                <HandCoins className="h-12 w-12 text-mahatai-primary" />
                 <div>
                   <p className="text-gray-600">ค่าดำเนินการเฉลี่ย</p>
-                  <p className="text-2xl font-light-300 text-mahathai-dark">เพียง 2%</p>
+                  <p className="text-2xl font-light-300 text-mahatai-dark">เพียง 2%</p>
                   <p className="text-sm text-green-600">ต่ำกว่าค่าเฉลี่ยอุตสาหกรรม</p>
                 </div>
               </div>

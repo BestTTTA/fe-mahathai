@@ -26,7 +26,7 @@ const DonationForm = () => {
     id: id || "1",
     title: "กองทุนเพื่อการศึกษาเด็กและผู้หญิงชาติพันธุ์ ชายแดนเเละชายขอบ HERO FUND",
     organizer: "มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ",
-    image: "/lovable-uploads/3a4e2117-b588-4492-b6f6-28a3bdb96294.png",
+    image: "/lovable-uploads/logo.jpg",
   };
   
   // Define donation tiers
@@ -110,7 +110,7 @@ const DonationForm = () => {
     <Layout>
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <Link to={`/campaigns/${id}`} className="flex items-center text-gray-600 mb-6 hover:text-mahathai-primary">
+          <Link to={`/campaigns/${id}`} className="flex items-center text-gray-600 mb-6 hover:text-mahatai-primary">
             <ChevronLeft className="h-4 w-4 mr-1" />
             <span>กลับ</span>
           </Link>
@@ -139,9 +139,9 @@ const DonationForm = () => {
             />
             
             {selectedTier !== null && (
-              <div className="mb-8 p-4 bg-mahathai-light rounded-lg">
+              <div className="mb-8 p-4 bg-mahatai-light rounded-lg">
                 <div className="flex items-center mb-2">
-                  {React.createElement(donationTiers[selectedTier].icon, { className: "h-5 w-5 text-mahathai-primary mr-2" })}
+                  {React.createElement(donationTiers[selectedTier].icon, { className: "h-5 w-5 text-mahatai-primary mr-2" })}
                   <h3 className="font-light-300">{donationTiers[selectedTier].title}</h3>
                 </div>
                 <p className="text-sm text-gray-600 mb-3">{donationTiers[selectedTier].description}</p>
@@ -178,7 +178,7 @@ const DonationForm = () => {
                 </Link>
               </Button>
               
-              <Button onClick={handleDonate} className="bg-mahathai-primary hover:bg-mahathai-secondary">
+              <Button onClick={handleDonate} className="bg-mahatai-primary hover:bg-mahatai-secondary">
                 ยืนยันบริจาค
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Button>

@@ -19,7 +19,7 @@ const PaymentMethodSection = ({
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
         <div 
-          className={`border ${paymentMethod === 'qr' ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors text-center`}
+          className={`border ${paymentMethod === 'qr' ? 'border-mahatai-primary bg-mahatai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahatai-primary transition-colors text-center`}
           onClick={() => setPaymentMethod('qr')}
         >
           <div className="flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const PaymentMethodSection = ({
         </div>
         
         <div 
-          className={`border ${paymentMethod === 'card' ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors text-center`}
+          className={`border ${paymentMethod === 'card' ? 'border-mahatai-primary bg-mahatai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahatai-primary transition-colors text-center`}
           onClick={() => setPaymentMethod('card')}
         >
           <div className="flex flex-col items-center justify-center">
@@ -39,7 +39,7 @@ const PaymentMethodSection = ({
         </div>
         
         <div 
-          className={`border ${paymentMethod === 'line' ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors text-center`}
+          className={`border ${paymentMethod === 'line' ? 'border-mahatai-primary bg-mahatai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahatai-primary transition-colors text-center`}
           onClick={() => setPaymentMethod('line')}
         >
           <div className="flex flex-col items-center justify-center">
@@ -55,7 +55,7 @@ const PaymentMethodSection = ({
         </div>
         
         <div 
-          className={`border ${paymentMethod === 'bank' ? 'border-mahathai-primary bg-mahathai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahathai-primary transition-colors text-center`}
+          className={`border ${paymentMethod === 'bank' ? 'border-mahatai-primary bg-mahatai-light' : 'border-gray-200'} rounded-md p-4 cursor-pointer hover:border-mahatai-primary transition-colors text-center`}
           onClick={() => setPaymentMethod('bank')}
         >
           <div className="flex flex-col items-center justify-center">

@@ -52,7 +52,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        mahathai: {
+        mahatai: {
           primary: "#549AEB",
           secondary: "#303E68",
           dark: "#303E68",

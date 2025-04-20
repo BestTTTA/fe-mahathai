@@ -9,7 +9,7 @@ const NewsAndEvents = () => {
   return (
     <Layout>
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-kanit font-light-300 text-mahathai-dark mb-10 text-left">
+        <h1 className="text-3xl font-kanit font-light-300 text-mahatai-dark mb-10 text-left">
           ข่าวสารและผลงาน
         </h1>
 
@@ -42,7 +42,7 @@ const NewsAndEvents = () => {
           </Button>
         </div>
 
-        <h1 className="text-3xl font-kanit font-light-300 text-mahathai-dark mb-10 text-left">
+        <h1 className="text-3xl font-kanit font-light-300 text-mahatai-dark mb-10 text-left">
           ข่าวประชาสัมพันธ์
         </h1>
 
@@ -75,7 +75,7 @@ const NewsAndEvents = () => {
           </Button>
         </div>
 
-        <h1 className="text-3xl font-kanit font-light-300 text-mahathai-dark mb-10 text-left">
+        <h1 className="text-3xl font-kanit font-light-300 text-mahatai-dark mb-10 text-left">
           ผู้ให้การสนับสนุน
         </h1>
 

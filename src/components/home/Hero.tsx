@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 text-mahathai-dark">
-              สร้างการเปลี่ยนแปลงให้กับ <span className="text-mahathai-primary">สังคมไทย</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 text-mahatai-dark">
+              สร้างการเปลี่ยนแปลงให้กับ <span className="text-mahatai-primary">สังคมไทย</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               แพลตฟอร์มระดมทุนเพื่อช่วยเหลือผู้พิการ เด็กด้อยโอกาส และชุมชนผู้ขาดแคลน 
@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-mahathai-primary hover:bg-mahathai-secondary text-lg py-6" size="lg" asChild>
+              <Button className="bg-mahatai-primary hover:bg-mahatai-secondary text-lg py-6" size="lg" asChild>
                 <Link to="/campaigns">
                   สำรวจแคมเปญ
                   <Search className="ml-2 h-5 w-5" />
@@ -45,10 +45,10 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 animate-float hidden md:block">
               <div className="flex items-center gap-3">
-                <Users className="h-10 w-10 text-mahathai-primary" />
+                <Users className="h-10 w-10 text-mahatai-primary" />
                 <div>
                   <p className="text-gray-700">ผู้สนับสนุนทั้งหมด</p>
-                  <p className="text-2xl font-light-300 text-mahathai-dark">152,487</p>
+                  <p className="text-2xl font-light-300 text-mahatai-dark">152,487</p>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Hero = () => {
                 <Heart className="h-10 w-10 text-red-500" />
                 <div>
                   <p className="text-gray-700">ยอดบริจาคทั้งหมด</p>
-                  <p className="text-2xl font-light-300 text-mahathai-dark">฿15.6M</p>
+                  <p className="text-2xl font-light-300 text-mahatai-dark">฿15.6M</p>
                 </div>
               </div>
             </div>

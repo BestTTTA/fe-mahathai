@@ -28,7 +28,7 @@ const CampaignHeader = ({ campaign }: CampaignHeaderProps) => {
       />
       
       <div className="flex flex-wrap items-center gap-4 mb-4">
-        <Badge className="bg-mahathai-primary">{campaign.category}</Badge>
+        <Badge className="bg-mahatai-primary">{campaign.category}</Badge>
         <div className="flex items-center gap-2 text-gray-600">
           <Users size={16} />
           <span>{campaign.donorsCount.toLocaleString()} ผู้สนับสนุน</span>
@@ -39,12 +39,12 @@ const CampaignHeader = ({ campaign }: CampaignHeaderProps) => {
         </div>
         <button 
           onClick={() => setIsFavorite(!isFavorite)}
-          className="ml-auto flex items-center gap-1 text-gray-600 hover:text-mahathai-primary"
+          className="ml-auto flex items-center gap-1 text-gray-600 hover:text-mahatai-primary"
         >
           <Heart size={20} fill={isFavorite ? "#d1536a" : "none"} color={isFavorite ? "#d1536a" : "currentColor"} />
           <span>ถูกใจโครงการ</span>
         </button>
-        <button className="flex items-center gap-1 text-gray-600 hover:text-mahathai-primary">
+        <button className="flex items-center gap-1 text-gray-600 hover:text-mahatai-primary">
           <Share2 size={20} />
           <span>แชร์</span>
         </button>

@@ -5,7 +5,7 @@ import { ArrowRight, Heart } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 bg-mahathai-primary">
+    <section className="py-20 bg-mahatai-primary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Heart className="mx-auto h-16 w-16 text-white mb-6 animate-pulse-light" />
@@ -14,13 +14,13 @@ const CallToAction = () => {
           </h2>
           <p className="text-xl text-white/90 mb-10 max-w-3xl mx-auto">
             ทุกการสนับสนุนของคุณ ไม่ว่าจะเล็กหรือใหญ่ ล้วนมีความหมายและสร้างการเปลี่ยนแปลง 
-            เริ่มต้นวันนี้กับ Mahathai-X
+            เริ่มต้นวันนี้กับ mahatai-X
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               size="lg" 
-              className="bg-white text-mahathai-primary hover:bg-gray-100 text-lg py-6 px-8" 
+              className="bg-white text-mahatai-primary hover:bg-gray-100 text-lg py-6 px-8" 
               asChild
             >
               <Link to="/campaigns">

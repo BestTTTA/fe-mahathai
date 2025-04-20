@@ -22,7 +22,7 @@ const CampaignDetail = () => {
     daysLeft: 45,
     category: "การศึกษา",
     organizer: "มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ",
-    organizerLogo: "/lovable-uploads/3a4e2117-b588-4492-b6f6-28a3bdb96294.png",
+    organizerLogo: "/lovable-uploads/logo.jpg",
     donationTiers: [
       {
         amount: 100,
@@ -94,13 +94,13 @@ const CampaignDetail = () => {
               <h3 className="text-2xl font-light-300 mb-6">ระดับการสนับสนุน</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {campaign.donationTiers.map((tier, index) => (
-                  <Card key={index} className="overflow-hidden border-2 hover:border-mahathai-primary transition-all hover:shadow-md">
-                    <div className="bg-mahathai-light p-4 flex justify-between items-center">
+                  <Card key={index} className="overflow-hidden border-2 hover:border-mahatai-primary transition-all hover:shadow-md">
+                    <div className="bg-mahatai-light p-4 flex justify-between items-center">
                       <h4 className="font-light-300 text-lg">{tier.title}</h4>
-                      <tier.icon className="h-6 w-6 text-mahathai-primary" />
+                      <tier.icon className="h-6 w-6 text-mahatai-primary" />
                     </div>
                     <CardContent className="p-6">
-                      <div className="text-2xl font-light-300 mb-2 text-mahathai-primary">
+                      <div className="text-2xl font-light-300 mb-2 text-mahatai-primary">
                         {tier.amount.toLocaleString()} บาท
                       </div>
                       <p className="text-gray-600 mb-4">{tier.description}</p>

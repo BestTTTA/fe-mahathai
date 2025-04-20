@@ -7,10 +7,10 @@ import { MapPin, Phone, Mail, Facebook, Youtube, Globe } from "lucide-react";
 const Contact = () => {
   return (
     <Layout>
-      <div className="bg-mahathai-light py-12">
+      <div className="bg-mahatai-light py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-light-300 text-mahathai-dark mb-4 font-kanit">
+            <h1 className="text-3xl md:text-4xl font-light-300 text-mahatai-dark mb-4 font-kanit">
               ติดต่อเรา
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -35,8 +35,8 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <div className="space-y-5">
                     <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-full bg-mahathai-light flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-5 h-5 text-mahathai-primary" />
+                      <div className="w-10 h-10 rounded-full bg-mahatai-light flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-5 h-5 text-mahatai-primary" />
                       </div>
                       <div>
                         <h3 className="font-light-300 text-gray-900 font-kanit text-lg">มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ</h3>
@@ -85,7 +85,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-gray-600">
-                          อีเมล : <a href="mailto:info@mahatai.org" className="text-mahathai-primary hover:underline">info@mahatai.org</a>
+                          อีเมล : <a href="mailto:info@mahatai.org" className="text-mahatai-primary hover:underline">info@mahatai.org</a>
                         </p>
                       </div>
                     </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-gray-600">
-                          <a href="https://www.facebook.com/mahatai" className="hover:text-mahathai-primary">
+                          <a href="https://www.facebook.com/mahatai" className="hover:text-mahatai-primary">
                             มูลนิธิพระมหาไถ่เพื่อการพัฒนาคนพิการ
                           </a>
                         </p>
@@ -120,7 +120,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-gray-600">
-                          <a href="https://line.me/R/ti/p/@994kykzq" className="hover:text-mahathai-primary">
+                          <a href="https://line.me/R/ti/p/@994kykzq" className="hover:text-mahatai-primary">
                             มูลนิธิพระมหาไถ่
                           </a>
                         </p>
@@ -133,7 +133,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-gray-600">
-                          <a href="https://www.tiktok.com/@mahatai_official" className="hover:text-mahathai-primary">
+                          <a href="https://www.tiktok.com/@mahatai_official" className="hover:text-mahatai-primary">
                             มูลนิธิพระมหาไถ่
                           </a>
                         </p>
@@ -146,7 +146,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-gray-600">
-                          <a href="https://www.youtube.com/c/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A31479%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/videos" className="hover:text-mahathai-primary">
+                          <a href="https://www.youtube.com/c/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A31479%E0%B8%AD%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A5%E0%B8%99%E0%B9%8C/videos" className="hover:text-mahatai-primary">
                             รายการ Mahatai Chanel
                           </a>
                         </p>
@@ -161,7 +161,7 @@ const Contact = () => {
             <div>
               <Card>
                 <CardContent className="p-6">
-                  <h2 className="text-xl font-semibold mb-6 text-mahathai-dark font-kanit">ส่งข้อความถึงเรา</h2>
+                  <h2 className="text-xl font-semibold mb-6 text-mahatai-dark font-kanit">ส่งข้อความถึงเรา</h2>
                   <form className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
@@ -171,7 +171,7 @@ const Contact = () => {
                         <input
                           type="text"
                           id="name"
-                          className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahathai-primary focus:border-transparent"
+                          className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahatai-primary focus:border-transparent"
                         />
                       </div>
                       <div className="space-y-2">
@@ -181,7 +181,7 @@ const Contact = () => {
                         <input
                           type="email"
                           id="email"
-                          className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahathai-primary focus:border-transparent"
+                          className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahatai-primary focus:border-transparent"
                         />
                       </div>
                     </div>
@@ -193,7 +193,7 @@ const Contact = () => {
                       <input
                         type="tel"
                         id="phone"
-                        className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahathai-primary focus:border-transparent"
+                        className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahatai-primary focus:border-transparent"
                       />
                     </div>
 
@@ -204,7 +204,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="subject"
-                        className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahathai-primary focus:border-transparent"
+                        className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahatai-primary focus:border-transparent"
                       />
                     </div>
 
@@ -215,11 +215,11 @@ const Contact = () => {
                       <textarea
                         id="message"
                         rows={5}
-                        className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahathai-primary focus:border-transparent"
+                        className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-mahatai-primary focus:border-transparent"
                       ></textarea>
                     </div>
 
-                    <Button className="w-full bg-mahathai-primary hover:bg-mahathai-secondary">
+                    <Button className="w-full bg-mahatai-primary hover:bg-mahatai-secondary">
                       ส่งข้อความ
                     </Button>
                   </form>
