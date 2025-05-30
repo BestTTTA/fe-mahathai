@@ -15,7 +15,7 @@ const CampaignDetail = () => {
     id: id || "1",
     title: "กองทุนเพื่อการศึกษาเด็กและผู้หญิงชาติพันธุ์ ชายแดนเเละชายขอบ HERO FUND",
     description: "กองทุนเพื่อการศึกษาเด็กและผู้หญิงชาติพันธุ์ ชายแดนเเละชายขอบ HERO FUND คือกองทุนที่เปิดพื้นที่ให้เด็กๆ และเยาวชนจากพื้นที่ห่างไกลและด้อยโอกาส สามารถเข้าถึงการศึกษาคุณภาพ เพื่อพัฒนาตัวเองให้ค้นพบและเข้าใจศักยภาพของตัวเอง",
-    image: "https://pbs.twimg.com/media/F_hXCgDawAAHUPe?format=jpg&name=large",
+    image: "/lovable-uploads/25389d50-4974-4b06-b157-de665c625578.jpg",
     raisedAmount: 4700000,
     goalAmount: 10000000,
     donorsCount: 1250,
